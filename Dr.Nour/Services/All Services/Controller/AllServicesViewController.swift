@@ -47,15 +47,6 @@ extension AllServicesViewController : UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     
-   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let bounds = collectionView.bounds
-        let heightVal = self.view.frame.height
-        let widthVal = self.view.frame.width
-        let cellsize = (heightVal < widthVal) ?  bounds.height/6 : bounds.width/2
-        
-        return CGSize(width: cellsize - 15  , height:  cellsize - 15  )
-    }
- */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let cellSize = CGSize(width: self.view.frame.width/2 - 35, height: self.view.frame.width/2)
            return cellSize
@@ -96,6 +87,9 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         let cell = collectionView.cellForItem(at: indexPath)
         cell?.contentView.layer.borderColor = UIColor.gray.cgColor
         cell?.contentView.layer.borderWidth = 2
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ServiceInfoViewController") as! ServiceInfoViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -103,6 +97,7 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         cell?.contentView.layer.borderColor = UIColor.gray.cgColor
         cell?.contentView.layer.borderWidth = 0
     }
+    
 }
 
 

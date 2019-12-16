@@ -14,7 +14,7 @@ struct ConstantMenu {
         var menu1ItemTxet = ["Personal info", "My reservations" , " My referral" , "  BooKings referred me" ,"My Balance" ]
         var menu2ItemTxet = ["About de Nour", "FAQ" , "Reviews" , "  Gallery" ,"Contact us"
     ,  "LogOut"]
-    var controller1 = ["Personal info", "My reservations" , " My referral" , "  BooKings referred me" ,"My Balance" ]
+    var controller1 = ["PersonalInfoViewController", "MyReservationsViewController" , " My referral" , "  BooKings referred me" ,"My Balance" ]
            var controller2 = ["About de Nour", "FAQ" , "Reviews" , "  Gallery" ,"Contact us"
        ,  "LogOut"]
     

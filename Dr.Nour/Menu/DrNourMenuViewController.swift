@@ -41,12 +41,25 @@ class DrNourMenuViewController: UIViewController {
            secondSideMenu.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner  ]
         }
     }
+     let menuItem = ConstantMenu()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func itemMenuBtnPressed(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(identifier: menuItem.controller1[sender.tag - 1] ) else { return  }
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    @IBAction func logOutBtnPressed(_ sender: UIButton) {
+        if let vc = storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController {
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+    
     
 }
