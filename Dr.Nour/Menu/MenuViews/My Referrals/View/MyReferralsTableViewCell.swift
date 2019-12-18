@@ -1,17 +1,14 @@
 //
-//  MyReservationsTableViewCell.swift
+//  MyReferralsTableViewCell.swift
 //  Dr.Nour
 //
-//  Created by Mustafa on 12/16/19.
+//  Created by Mustafa on 12/17/19.
 //  Copyright © 2019 begroup. All rights reserved.
 //
 
 import UIKit
 
-class MyReservationsTableViewCell: UITableViewCell {
-    @IBOutlet weak var reservationsNameLbl: UILabel!
-       @IBOutlet weak var reservationsData: UILabel!
-       @IBOutlet weak var reservationsMoney: UILabel!
+class MyReferralsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

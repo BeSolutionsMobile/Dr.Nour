@@ -18,6 +18,11 @@
 		3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13107923A7765A007F989C /* PersonalInfoViewController.swift */; };
 		3B13107E23A77EC7007F989C /* MyReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13107D23A77EC7007F989C /* MyReservationsViewController.swift */; };
 		3B13108123A77F6E007F989C /* MyReservationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */; };
+		3B21EBF223A8DA3800D02C12 /* MyReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF123A8DA3800D02C12 /* MyReferralsViewController.swift */; };
+		3B21EBF423A8DA5300D02C12 /* MyReferralsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF323A8DA5300D02C12 /* MyReferralsTableViewCell.swift */; };
+		3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */; };
+		3B21EBFB23A92A1900D02C12 /* BookingsReferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */; };
+		3B21EBFD23A92A3600D02C12 /* BookingsReferredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */; };
 		3B3E236123A65485003C0123 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235423A65484003C0123 /* UserDefault.swift */; };
 		3B3E236223A65485003C0123 /* ConstantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235623A65484003C0123 /* ConstantMenu.swift */; };
 		3B3E236723A65485003C0123 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235C23A65485003C0123 /* Alert.swift */; };
@@ -73,6 +78,11 @@
 		3B13107923A7765A007F989C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		3B13107D23A77EC7007F989C /* MyReservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsViewController.swift; sourceTree = "<group>"; };
 		3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsTableViewCell.swift; sourceTree = "<group>"; };
+		3B21EBF123A8DA3800D02C12 /* MyReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReferralsViewController.swift; sourceTree = "<group>"; };
+		3B21EBF323A8DA5300D02C12 /* MyReferralsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReferralsTableViewCell.swift; sourceTree = "<group>"; };
+		3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfMyReferralsPopupViewController.swift; sourceTree = "<group>"; };
+		3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredViewController.swift; sourceTree = "<group>"; };
+		3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredTableViewCell.swift; sourceTree = "<group>"; };
 		3B3E235423A65484003C0123 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		3B3E235623A65484003C0123 /* ConstantMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantMenu.swift; sourceTree = "<group>"; };
 		3B3E235C23A65485003C0123 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -192,6 +202,8 @@
 		3B13107623A77605007F989C /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
+				3B21EBF723A929DF00D02C12 /* Bookings Referred */,
+				3B21EBEE23A8DA0800D02C12 /* My Referrals */,
 				3B13107B23A77E8B007F989C /* My Reservations  */,
 				3B13107723A77619007F989C /* Personal Info */,
 			);
@@ -238,6 +250,57 @@
 			isa = PBXGroup;
 			children = (
 				3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B21EBEE23A8DA0800D02C12 /* My Referrals */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBF023A8DA1E00D02C12 /* View */,
+				3B21EBEF23A8DA1100D02C12 /* Controller */,
+			);
+			path = "My Referrals";
+			sourceTree = "<group>";
+		};
+		3B21EBEF23A8DA1100D02C12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBF123A8DA3800D02C12 /* MyReferralsViewController.swift */,
+				3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B21EBF023A8DA1E00D02C12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBF323A8DA5300D02C12 /* MyReferralsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B21EBF723A929DF00D02C12 /* Bookings Referred */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBF923A929F900D02C12 /* View */,
+				3B21EBF823A929F000D02C12 /* Controller */,
+			);
+			path = "Bookings Referred";
+			sourceTree = "<group>";
+		};
+		3B21EBF823A929F000D02C12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B21EBF923A929F900D02C12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -515,19 +578,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B21EBFD23A92A3600D02C12 /* BookingsReferredTableViewCell.swift in Sources */,
 				3B3E237923A673A6003C0123 /* AllServicesViewController.swift in Sources */,
 				3B3E236F23A654D0003C0123 /* LoginViewController.swift in Sources */,
 				3B13107E23A77EC7007F989C /* MyReservationsViewController.swift in Sources */,
 				3B3E236223A65485003C0123 /* ConstantMenu.swift in Sources */,
 				3B3E237B23A67625003C0123 /* ServicesCollectionViewCell.swift in Sources */,
+				3B21EBF423A8DA5300D02C12 /* MyReferralsTableViewCell.swift in Sources */,
 				3BCF529A23A7AF8700F84D70 /* AddYourPhoneViewController.swift in Sources */,
+				3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */,
 				3BCF529C23A7BC2200F84D70 /* ServiceInfoViewController.swift in Sources */,
 				3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */,
 				3B3E236123A65485003C0123 /* UserDefault.swift in Sources */,
 				04F1A64E23A6435100293AA2 /* ViewController.swift in Sources */,
+				3B21EBFB23A92A1900D02C12 /* BookingsReferredViewController.swift in Sources */,
 				3B13108123A77F6E007F989C /* MyReservationsTableViewCell.swift in Sources */,
 				3B3E236A23A65485003C0123 /* CustemDesign.swift in Sources */,
 				3B5E6FE723A8305900E86EFA /* DataOfServiceInfoPouopViewController.swift in Sources */,
+				3B21EBF223A8DA3800D02C12 /* MyReferralsViewController.swift in Sources */,
 				3B3E236923A65485003C0123 /* Colortext.swift in Sources */,
 				04F1A64A23A6435100293AA2 /* AppDelegate.swift in Sources */,
 				3B3E237423A65DEA003C0123 /* RegisterViewController.swift in Sources */,

@@ -18,6 +18,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var switchBtn: UISwitch!
     @IBOutlet weak var codeTf: UITextField!
     @IBOutlet weak var checkView: BEMCheckBox!
+    @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var loginFacebookBtn: UIButton!
     @IBOutlet weak var footerView: UIView!{
         didSet{
@@ -39,9 +40,12 @@ class RegisterViewController: UIViewController {
         CustomDesign.customTextFaild(textField: passwordTf)
          CustomDesign.customTextFaild(textField: codeTf)
         CustomDesign.cricleButtonDesign(btn: loginFacebookBtn)
+        CustomDesign.cricleButtonDesign(btn: registerBtn)
     }
     
 
+    @IBAction func registerBtnPressed(_ sender: UIButton) {
+    }
     
     @IBAction func loginFaceBookBtnPressed(_ sender: UIButton) {
     }
