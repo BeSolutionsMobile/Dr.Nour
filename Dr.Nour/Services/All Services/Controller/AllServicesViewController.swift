@@ -20,6 +20,7 @@ class AllServicesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          updateViewDesign()
+                
         
         // Do any additional setup after loading the view.
     }
@@ -27,9 +28,11 @@ class AllServicesViewController: UIViewController {
     
     
     func updateViewDesign() {
-             contentOfAllServices.layer.cornerRadius = 20
-             contentOfAllServices.clipsToBounds = true
-         }
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        contentOfAllServices.layer.cornerRadius = 20
+        contentOfAllServices.clipsToBounds = true
+    }
     
     @IBAction func menuItemPressed(_ sender: UIBarButtonItem) {
         let vc = storyboard?.instantiateViewController(identifier: "SideMenuNavigationController") as! SideMenuNavigationController

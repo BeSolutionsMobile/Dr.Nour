@@ -17,7 +17,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTf: UITextField!
     @IBOutlet weak var switchBtn: UISwitch!
     @IBOutlet weak var codeTf: UITextField!
-    @IBOutlet weak var checkView: BEMCheckBox!
+    @IBOutlet weak var checkView: BEMCheckBox!{
+        didSet{
+            self.checkView.boxType = .square
+        }
+    }
     @IBOutlet weak var registerBtn: UIButton!
     @IBOutlet weak var loginFacebookBtn: UIButton!
     @IBOutlet weak var footerView: UIView!{
@@ -41,6 +45,10 @@ class RegisterViewController: UIViewController {
          CustomDesign.customTextFaild(textField: codeTf)
         CustomDesign.cricleButtonDesign(btn: loginFacebookBtn)
         CustomDesign.cricleButtonDesign(btn: registerBtn)
+    }
+    
+    
+    @IBAction func acceptAllTermsAndConditions(_ sender: BEMCheckBox) {
     }
     
 

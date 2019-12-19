@@ -8,6 +8,8 @@
 
 import UIKit
 import BEMCheckBox
+import BiometricAuthentication
+
 
 class LoginViewController: UIViewController {
 
@@ -17,7 +19,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
-    @IBOutlet weak var checkBtn: BEMCheckBox!
+    @IBOutlet weak var checkBtn: BEMCheckBox!{
+        didSet{
+            self.checkBtn.boxType = .square
+        }
+    }
     
     @IBOutlet weak var footerView: UIView!{
         didSet{
@@ -41,7 +47,9 @@ class LoginViewController: UIViewController {
           CustomDesign.cricleButtonDesign(btn: loginBtn)
       }
     
-
+    @IBAction func biometricAuthChecked(_ sender: BEMCheckBox) {
+           Shared.BiometricAuthEnabled = sender.on
+       }
     
     @IBAction func loginFaceBookBtnPressed(_ sender: UIButton) {
     }

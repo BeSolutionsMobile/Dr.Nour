@@ -16,18 +16,9 @@ class BookingsReferredViewController: UIViewController {
             bookingsReferredTableView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner  ]
         }
     }
-    @IBOutlet weak var totalReservationsOfMoney: UILabel!{
-        didSet{
-           totalReservationsOfMoney.layer.cornerRadius = totalReservationsOfMoney.frame.size.height/2
-           totalReservationsOfMoney.clipsToBounds = true
-        }
-    }
-    @IBOutlet weak var totalEarnedOfMoney: UILabel!{
-        didSet{
-           totalEarnedOfMoney.layer.cornerRadius = totalEarnedOfMoney.frame.size.height/2
-           totalEarnedOfMoney.clipsToBounds = true
-        }
-    }
+    @IBOutlet weak var totalReservationsOfMoney: UILabel!
+    @IBOutlet weak var totalEarnedOfMoney: UILabel!
+    
     @IBOutlet weak var footerView: UIView!
     @IBOutlet weak var totalEarnedView: UIView!{
         didSet{
@@ -39,12 +30,33 @@ class BookingsReferredViewController: UIViewController {
     }
     
     let titlesF = ["BigMac","BigTasty","Chicken-Fillet","ChickenMac","Gaden-Salad","Chicken-Fillet","Chicken-Fillet","Chicken-Fillet","Chicken-Fillet" ]
+    var titlebar : String?
+    var color : UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        update()
+     
+
 
         // Do any additional setup after loading the view.
     }
     
+    func updateViewDesign(title : String , color : UIColor ) {
+            self.title = title
+           footerView.backgroundColor = color
+       
+        
+       
+    }
+    func update()  {
+        CustomDesign.criclLableDesign(lable: totalReservationsOfMoney)
+        CustomDesign.criclLableDesign(lable: totalEarnedOfMoney)
+        if let t = titlebar , let c = color {
+            updateViewDesign(title: t, color: c)
+            
+        }
+    }
 
    
 }
@@ -56,8 +68,6 @@ extension BookingsReferredViewController  : UITableViewDelegate , UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookingsReferredTableViewCell", for: indexPath) as! BookingsReferredTableViewCell
-       // cell.textLabel?.text = titlesF[indexPath.row]
-              
               return cell
     }
     

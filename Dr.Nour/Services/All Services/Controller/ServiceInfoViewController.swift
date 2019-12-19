@@ -43,6 +43,7 @@ class ServiceInfoViewController: UIViewController {
     @IBOutlet weak var bookingNowBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+         rightBackBut()
         updateViewDesign()
         
         

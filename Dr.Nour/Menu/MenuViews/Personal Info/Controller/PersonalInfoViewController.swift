@@ -23,6 +23,7 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        rightBackBut()
 
         // Do any additional setup after loading the view.
     }

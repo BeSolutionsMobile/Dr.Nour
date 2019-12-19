@@ -15,9 +15,14 @@
 		04F1A65623A6435300293AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F1A65423A6435300293AA2 /* LaunchScreen.storyboard */; };
 		04F1A66123A6435300293AA2 /* Dr_NourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1A66023A6435300293AA2 /* Dr_NourTests.swift */; };
 		04F1A66C23A6435300293AA2 /* Dr_NourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F1A66B23A6435300293AA2 /* Dr_NourUITests.swift */; };
+		3B11F9F823AA0B390057FE20 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11F9F723AA0B390057FE20 /* Shared.swift */; };
+		3B11F9FE23AA10A60057FE20 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11F9FD23AA10A60057FE20 /* MainNavigationController.swift */; };
+		3B11FA0223AA290F0057FE20 /* MyBalalnceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B11FA0123AA290F0057FE20 /* MyBalalnceViewController.swift */; };
 		3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13107923A7765A007F989C /* PersonalInfoViewController.swift */; };
 		3B13107E23A77EC7007F989C /* MyReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13107D23A77EC7007F989C /* MyReservationsViewController.swift */; };
 		3B13108123A77F6E007F989C /* MyReservationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */; };
+		3B155FD923ABA2F800DCA9E0 /* ContactusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B155FD823ABA2F800DCA9E0 /* ContactusTableViewCell.swift */; };
+		3B155FDB23ABA30E00DCA9E0 /* ContactusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B155FDA23ABA30E00DCA9E0 /* ContactusViewController.swift */; };
 		3B21EBF223A8DA3800D02C12 /* MyReferralsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF123A8DA3800D02C12 /* MyReferralsViewController.swift */; };
 		3B21EBF423A8DA5300D02C12 /* MyReferralsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF323A8DA5300D02C12 /* MyReferralsTableViewCell.swift */; };
 		3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */; };
@@ -36,6 +41,11 @@
 		3B3E237B23A67625003C0123 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E237A23A67625003C0123 /* ServicesCollectionViewCell.swift */; };
 		3B3E238123A6A135003C0123 /* DrNourMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E238023A6A135003C0123 /* DrNourMenuViewController.swift */; };
 		3B5E6FE723A8305900E86EFA /* DataOfServiceInfoPouopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E6FE623A8305900E86EFA /* DataOfServiceInfoPouopViewController.swift */; };
+		3B6DD7A623AA5CB500DB1B7F /* AboutDrNourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7A523AA5CB500DB1B7F /* AboutDrNourViewController.swift */; };
+		3B6DD7AA23AA5D9300DB1B7F /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7A923AA5D9300DB1B7F /* FAQViewController.swift */; };
+		3B6DD7AE23AA68F900DB1B7F /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7AD23AA68F900DB1B7F /* ReviewsViewController.swift */; };
+		3B6DD7B223AA72F800DB1B7F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7B123AA72F800DB1B7F /* GalleryViewController.swift */; };
+		3B6DD7B723AA745200DB1B7F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */; };
 		3BCF529623A7A70700F84D70 /* DataOfReserviationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529523A7A70700F84D70 /* DataOfReserviationsViewController.swift */; };
 		3BCF529823A7AF4900F84D70 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */; };
 		3BCF529A23A7AF8700F84D70 /* AddYourPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */; };
@@ -75,9 +85,14 @@
 		04F1A66723A6435300293AA2 /* Dr.NourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dr.NourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F1A66B23A6435300293AA2 /* Dr_NourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dr_NourUITests.swift; sourceTree = "<group>"; };
 		04F1A66D23A6435300293AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B11F9F723AA0B390057FE20 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		3B11F9FD23AA10A60057FE20 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		3B11FA0123AA290F0057FE20 /* MyBalalnceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBalalnceViewController.swift; sourceTree = "<group>"; };
 		3B13107923A7765A007F989C /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		3B13107D23A77EC7007F989C /* MyReservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsViewController.swift; sourceTree = "<group>"; };
 		3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReservationsTableViewCell.swift; sourceTree = "<group>"; };
+		3B155FD823ABA2F800DCA9E0 /* ContactusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactusTableViewCell.swift; sourceTree = "<group>"; };
+		3B155FDA23ABA30E00DCA9E0 /* ContactusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactusViewController.swift; sourceTree = "<group>"; };
 		3B21EBF123A8DA3800D02C12 /* MyReferralsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReferralsViewController.swift; sourceTree = "<group>"; };
 		3B21EBF323A8DA5300D02C12 /* MyReferralsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReferralsTableViewCell.swift; sourceTree = "<group>"; };
 		3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfMyReferralsPopupViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +111,11 @@
 		3B3E237A23A67625003C0123 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B3E238023A6A135003C0123 /* DrNourMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrNourMenuViewController.swift; sourceTree = "<group>"; };
 		3B5E6FE623A8305900E86EFA /* DataOfServiceInfoPouopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfServiceInfoPouopViewController.swift; sourceTree = "<group>"; };
+		3B6DD7A523AA5CB500DB1B7F /* AboutDrNourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDrNourViewController.swift; sourceTree = "<group>"; };
+		3B6DD7A923AA5D9300DB1B7F /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		3B6DD7AD23AA68F900DB1B7F /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
+		3B6DD7B123AA72F800DB1B7F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BCF529523A7A70700F84D70 /* DataOfReserviationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfReserviationsViewController.swift; sourceTree = "<group>"; };
 		3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourPhoneViewController.swift; sourceTree = "<group>"; };
@@ -159,8 +179,8 @@
 				04F1A64923A6435100293AA2 /* AppDelegate.swift */,
 				04F1A64B23A6435100293AA2 /* SceneDelegate.swift */,
 				04F1A64D23A6435100293AA2 /* ViewController.swift */,
-				3B3E235B23A65485003C0123 /* Utitlites */,
 				3B3E235323A65484003C0123 /* Shared */,
+				3B3E235B23A65485003C0123 /* Utitlites */,
 				3B3E236D23A654BA003C0123 /* Login */,
 				3B3E237223A65DD7003C0123 /* Register */,
 				3B3E237523A67355003C0123 /* Services */,
@@ -199,9 +219,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3B11F9FB23AA108C0057FE20 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B11F9FC23AA10960057FE20 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3B11F9FC23AA10960057FE20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B11F9FD23AA10A60057FE20 /* MainNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B11F9FF23AA28EB0057FE20 /* My Balalnce */ = {
+			isa = PBXGroup;
+			children = (
+				3B11FA0023AA28F30057FE20 /* Controller */,
+			);
+			path = "My Balalnce";
+			sourceTree = "<group>";
+		};
+		3B11FA0023AA28F30057FE20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B11FA0123AA290F0057FE20 /* MyBalalnceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3B13107623A77605007F989C /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
+				3B6DD7AF23AA72DE00DB1B7F /* Gallery */,
+				3B6DD7AB23AA68E200DB1B7F /* Reviews */,
+				3B6DD7A723AA5D7C00DB1B7F /* FAQ */,
+				3B6DD7A323AA5C8B00DB1B7F /* About Dr Nour */,
+				3B11F9FF23AA28EB0057FE20 /* My Balalnce */,
 				3B21EBF723A929DF00D02C12 /* Bookings Referred */,
 				3B21EBEE23A8DA0800D02C12 /* My Referrals */,
 				3B13107B23A77E8B007F989C /* My Reservations  */,
@@ -250,6 +307,31 @@
 			isa = PBXGroup;
 			children = (
 				3B13108023A77F6E007F989C /* MyReservationsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B155FD423ABA2BE00DCA9E0 /* Contact us */ = {
+			isa = PBXGroup;
+			children = (
+				3B155FD623ABA2D300DCA9E0 /* View */,
+				3B155FD523ABA2C400DCA9E0 /* Controller */,
+			);
+			path = "Contact us";
+			sourceTree = "<group>";
+		};
+		3B155FD523ABA2C400DCA9E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B155FDA23ABA30E00DCA9E0 /* ContactusViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B155FD623ABA2D300DCA9E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B155FD823ABA2F800DCA9E0 /* ContactusTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				3B3E235423A65484003C0123 /* UserDefault.swift */,
+				3B11F9F723AA0B390057FE20 /* Shared.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -316,6 +399,7 @@
 		3B3E235523A65484003C0123 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				3B155FD423ABA2BE00DCA9E0 /* Contact us */,
 				3B13107623A77605007F989C /* MenuViews */,
 				3B3E235623A65484003C0123 /* ConstantMenu.swift */,
 				3B3E238023A6A135003C0123 /* DrNourMenuViewController.swift */,
@@ -362,6 +446,7 @@
 		3B3E237523A67355003C0123 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3B11F9FB23AA108C0057FE20 /* Main */,
 				3B3E237623A67374003C0123 /* All Services */,
 			);
 			path = Services;
@@ -390,6 +475,79 @@
 			isa = PBXGroup;
 			children = (
 				3B3E237A23A67625003C0123 /* ServicesCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B6DD7A323AA5C8B00DB1B7F /* About Dr Nour */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7A423AA5C9000DB1B7F /* Controller */,
+			);
+			path = "About Dr Nour";
+			sourceTree = "<group>";
+		};
+		3B6DD7A423AA5C9000DB1B7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7A523AA5CB500DB1B7F /* AboutDrNourViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B6DD7A723AA5D7C00DB1B7F /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7A823AA5D8100DB1B7F /* Controller */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		3B6DD7A823AA5D8100DB1B7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7A923AA5D9300DB1B7F /* FAQViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B6DD7AB23AA68E200DB1B7F /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7AC23AA68E700DB1B7F /* Controller */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		3B6DD7AC23AA68E700DB1B7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7AD23AA68F900DB1B7F /* ReviewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B6DD7AF23AA72DE00DB1B7F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7B323AA730300DB1B7F /* View */,
+				3B6DD7B023AA72E500DB1B7F /* Controller */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		3B6DD7B023AA72E500DB1B7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7B123AA72F800DB1B7F /* GalleryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B6DD7B323AA730300DB1B7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,6 +736,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B11F9FE23AA10A60057FE20 /* MainNavigationController.swift in Sources */,
+				3B155FDB23ABA30E00DCA9E0 /* ContactusViewController.swift in Sources */,
 				3B21EBFD23A92A3600D02C12 /* BookingsReferredTableViewCell.swift in Sources */,
 				3B3E237923A673A6003C0123 /* AllServicesViewController.swift in Sources */,
 				3B3E236F23A654D0003C0123 /* LoginViewController.swift in Sources */,
@@ -591,13 +751,19 @@
 				3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */,
 				3B3E236123A65485003C0123 /* UserDefault.swift in Sources */,
 				04F1A64E23A6435100293AA2 /* ViewController.swift in Sources */,
+				3B155FD923ABA2F800DCA9E0 /* ContactusTableViewCell.swift in Sources */,
+				3B6DD7A623AA5CB500DB1B7F /* AboutDrNourViewController.swift in Sources */,
+				3B6DD7AA23AA5D9300DB1B7F /* FAQViewController.swift in Sources */,
 				3B21EBFB23A92A1900D02C12 /* BookingsReferredViewController.swift in Sources */,
 				3B13108123A77F6E007F989C /* MyReservationsTableViewCell.swift in Sources */,
 				3B3E236A23A65485003C0123 /* CustemDesign.swift in Sources */,
 				3B5E6FE723A8305900E86EFA /* DataOfServiceInfoPouopViewController.swift in Sources */,
 				3B21EBF223A8DA3800D02C12 /* MyReferralsViewController.swift in Sources */,
+				3B11F9F823AA0B390057FE20 /* Shared.swift in Sources */,
+				3B6DD7B223AA72F800DB1B7F /* GalleryViewController.swift in Sources */,
 				3B3E236923A65485003C0123 /* Colortext.swift in Sources */,
 				04F1A64A23A6435100293AA2 /* AppDelegate.swift in Sources */,
+				3B6DD7B723AA745200DB1B7F /* GalleryCollectionViewCell.swift in Sources */,
 				3B3E237423A65DEA003C0123 /* RegisterViewController.swift in Sources */,
 				3BCF529823A7AF4900F84D70 /* ChangePasswordViewController.swift in Sources */,
 				3B3E236723A65485003C0123 /* Alert.swift in Sources */,
@@ -606,6 +772,8 @@
 				3BCF529623A7A70700F84D70 /* DataOfReserviationsViewController.swift in Sources */,
 				3B3E238123A6A135003C0123 /* DrNourMenuViewController.swift in Sources */,
 				04F1A64C23A6435100293AA2 /* SceneDelegate.swift in Sources */,
+				3B6DD7AE23AA68F900DB1B7F /* ReviewsViewController.swift in Sources */,
+				3B11FA0223AA290F0057FE20 /* MyBalalnceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

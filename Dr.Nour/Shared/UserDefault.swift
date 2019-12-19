@@ -15,8 +15,6 @@ struct UserDefault {
     static let phone = "phone"
     static let photo = "photo"
     
-    
-    
     static func setId ( _ id : String){
         UserDefaults.standard.set(id, forKey: self.id)
     }
