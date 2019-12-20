@@ -1,0 +1,38 @@
+PODS:
+  - BEMCheckBox (1.4.1)
+  - BiometricAuthentication (3.1.2)
+  - ImageSlideshow (1.8.1):
+    - ImageSlideshow/Core (= 1.8.1)
+  - ImageSlideshow/Core (1.8.1)
+  - KNSwitcher (1.0.1)
+  - Player (0.13.2)
+  - SideMenu (6.4.7)
+
+DEPENDENCIES:
+  - BEMCheckBox
+  - BiometricAuthentication
+  - ImageSlideshow
+  - KNSwitcher
+  - Player
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - BEMCheckBox
+    - BiometricAuthentication
+    - ImageSlideshow
+    - KNSwitcher
+    - Player
+    - SideMenu
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  BiometricAuthentication: 36445f3ab77699489f91995bed887be89890afac
+  ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
+  KNSwitcher: 4dfdd348238c02aab298f4c6269f68fd08293793
+  Player: 7a2bcad3631034fa47d4b6fdedf7c4075fc236fe
+  SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+
+PODFILE CHECKSUM: 7dfaeffedffe4ebd108a3ed9d758b879ed9c44a8
+
+COCOAPODS: 1.8.4
