@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class PersonalInfoViewController: UIViewController {
 
@@ -23,7 +24,8 @@ class PersonalInfoViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        rightBackBut()
+        showMenuAndBack() 
+        
 
         // Do any additional setup after loading the view.
     }
@@ -43,6 +45,9 @@ class PersonalInfoViewController: UIViewController {
     }
     @IBAction func addYourPhotoBtnPressed(_ sender: UIButton) {
         
+    
     }
     
+    
+ 
 }

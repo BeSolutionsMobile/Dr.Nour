@@ -30,6 +30,7 @@ class ReviewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMenuAndBack() 
         updateViewDesign()
         
 

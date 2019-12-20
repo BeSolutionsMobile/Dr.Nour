@@ -17,24 +17,25 @@ class MainNavigationController: UINavigationController {
 }
 
 extension UIViewController {
-    func rightBackBut() {
+    func showMenuAndBack() {
         navigationItem.hidesBackButton = true
-        let rightBack = UIBarButtonItem(title: "", style: .done,target: self, action: #selector(addTapped))
-        rightBack.image = UIImage(named: "rightArrow")
+        let rightBack = UIBarButtonItem(title: "", style: .done,target: self, action: #selector(backBtn))
+        rightBack.image = UIImage(named: "back")
+        rightBack.tintColor = UIColor.white
         navigationItem.rightBarButtonItem = rightBack
-        let menuBut = UIBarButtonItem(title: "", style: .done,target: self, action: #selector(showMenu))
-        menuBut.image = UIImage(named: "menuButton")
+        let menuBut = UIBarButtonItem(title: "", style: .done,target: self, action: #selector(menuBtn))
+        menuBut.image = UIImage(named: "menu1")
+        menuBut.tintColor = UIColor.white
         navigationItem.leftBarButtonItem = menuBut
     }
     
-    @objc func addTapped(){
-        navigationController?.popToRootViewController(animated: true)
+    @objc func backBtn(){
+                navigationController?.popViewController(animated: true)
+
     }
     
-    @objc func showMenu(){
-        
+    @objc func menuBtn(){
         let vc = storyboard?.instantiateViewController(identifier: "SideMenuNavigationController") as! SideMenuNavigationController
-        vc.modalPresentationStyle = .overFullScreen
          vc.settings = SharedMenu.settings(view: self.view)
         present(vc, animated: true, completion: nil)
         

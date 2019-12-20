@@ -28,6 +28,7 @@
 		3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */; };
 		3B21EBFB23A92A1900D02C12 /* BookingsReferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */; };
 		3B21EBFD23A92A3600D02C12 /* BookingsReferredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */; };
+		3B23CA0223ACF02C00276908 /* LunchCricleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23CA0123ACF02C00276908 /* LunchCricleView.swift */; };
 		3B3E236123A65485003C0123 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235423A65484003C0123 /* UserDefault.swift */; };
 		3B3E236223A65485003C0123 /* ConstantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235623A65484003C0123 /* ConstantMenu.swift */; };
 		3B3E236723A65485003C0123 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235C23A65485003C0123 /* Alert.swift */; };
@@ -46,6 +47,10 @@
 		3B6DD7AE23AA68F900DB1B7F /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7AD23AA68F900DB1B7F /* ReviewsViewController.swift */; };
 		3B6DD7B223AA72F800DB1B7F /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7B123AA72F800DB1B7F /* GalleryViewController.swift */; };
 		3B6DD7B723AA745200DB1B7F /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */; };
+		3BA5717023AD52F200631721 /* TitleOfSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5716E23AD52F100631721 /* TitleOfSectionTableViewCell.swift */; };
+		3BA5717123AD52F200631721 /* TitleOfSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5716F23AD52F100631721 /* TitleOfSectionTableViewCell.xib */; };
+		3BA5717623AD53C900631721 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5717423AD53C900631721 /* FAQTableViewCell.swift */; };
+		3BA5717723AD53C900631721 /* FAQTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5717523AD53C900631721 /* FAQTableViewCell.xib */; };
 		3BCF529623A7A70700F84D70 /* DataOfReserviationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529523A7A70700F84D70 /* DataOfReserviationsViewController.swift */; };
 		3BCF529823A7AF4900F84D70 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */; };
 		3BCF529A23A7AF8700F84D70 /* AddYourPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */; };
@@ -98,6 +103,7 @@
 		3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfMyReferralsPopupViewController.swift; sourceTree = "<group>"; };
 		3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredViewController.swift; sourceTree = "<group>"; };
 		3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredTableViewCell.swift; sourceTree = "<group>"; };
+		3B23CA0123ACF02C00276908 /* LunchCricleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCricleView.swift; sourceTree = "<group>"; };
 		3B3E235423A65484003C0123 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		3B3E235623A65484003C0123 /* ConstantMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantMenu.swift; sourceTree = "<group>"; };
 		3B3E235C23A65485003C0123 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -116,6 +122,10 @@
 		3B6DD7AD23AA68F900DB1B7F /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 		3B6DD7B123AA72F800DB1B7F /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BA5716E23AD52F100631721 /* TitleOfSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleOfSectionTableViewCell.swift; sourceTree = "<group>"; };
+		3BA5716F23AD52F100631721 /* TitleOfSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleOfSectionTableViewCell.xib; sourceTree = "<group>"; };
+		3BA5717423AD53C900631721 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		3BA5717523AD53C900631721 /* FAQTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQTableViewCell.xib; sourceTree = "<group>"; };
 		3BCF529523A7A70700F84D70 /* DataOfReserviationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfReserviationsViewController.swift; sourceTree = "<group>"; };
 		3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourPhoneViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +264,7 @@
 		3B13107623A77605007F989C /* MenuViews */ = {
 			isa = PBXGroup;
 			children = (
+				3B155FD423ABA2BE00DCA9E0 /* Contact us */,
 				3B6DD7AF23AA72DE00DB1B7F /* Gallery */,
 				3B6DD7AB23AA68E200DB1B7F /* Reviews */,
 				3B6DD7A723AA5D7C00DB1B7F /* FAQ */,
@@ -399,7 +410,6 @@
 		3B3E235523A65484003C0123 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				3B155FD423ABA2BE00DCA9E0 /* Contact us */,
 				3B13107623A77605007F989C /* MenuViews */,
 				3B3E235623A65484003C0123 /* ConstantMenu.swift */,
 				3B3E238023A6A135003C0123 /* DrNourMenuViewController.swift */,
@@ -415,6 +425,7 @@
 				3B3E235E23A65485003C0123 /* Colortext.swift */,
 				3B3E235F23A65485003C0123 /* CustemDesign.swift */,
 				3B3E236023A65485003C0123 /* DesignableUITextField.swift */,
+				3B23CA0123ACF02C00276908 /* LunchCricleView.swift */,
 			);
 			path = Utitlites;
 			sourceTree = "<group>";
@@ -498,6 +509,7 @@
 		3B6DD7A723AA5D7C00DB1B7F /* FAQ */ = {
 			isa = PBXGroup;
 			children = (
+				3BA5716B23AD4BAB00631721 /* View */,
 				3B6DD7A823AA5D8100DB1B7F /* Controller */,
 			);
 			path = FAQ;
@@ -548,6 +560,17 @@
 			isa = PBXGroup;
 			children = (
 				3B6DD7B623AA745200DB1B7F /* GalleryCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BA5716B23AD4BAB00631721 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BA5716E23AD52F100631721 /* TitleOfSectionTableViewCell.swift */,
+				3BA5716F23AD52F100631721 /* TitleOfSectionTableViewCell.xib */,
+				3BA5717423AD53C900631721 /* FAQTableViewCell.swift */,
+				3BA5717523AD53C900631721 /* FAQTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -670,6 +693,8 @@
 				04F1A65623A6435300293AA2 /* LaunchScreen.storyboard in Resources */,
 				04F1A65323A6435300293AA2 /* Assets.xcassets in Resources */,
 				04F1A65123A6435100293AA2 /* Main.storyboard in Resources */,
+				3BA5717723AD53C900631721 /* FAQTableViewCell.xib in Resources */,
+				3BA5717123AD52F200631721 /* TitleOfSectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +776,7 @@
 				3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */,
 				3B3E236123A65485003C0123 /* UserDefault.swift in Sources */,
 				04F1A64E23A6435100293AA2 /* ViewController.swift in Sources */,
+				3B23CA0223ACF02C00276908 /* LunchCricleView.swift in Sources */,
 				3B155FD923ABA2F800DCA9E0 /* ContactusTableViewCell.swift in Sources */,
 				3B6DD7A623AA5CB500DB1B7F /* AboutDrNourViewController.swift in Sources */,
 				3B6DD7AA23AA5D9300DB1B7F /* FAQViewController.swift in Sources */,
@@ -762,6 +788,7 @@
 				3B11F9F823AA0B390057FE20 /* Shared.swift in Sources */,
 				3B6DD7B223AA72F800DB1B7F /* GalleryViewController.swift in Sources */,
 				3B3E236923A65485003C0123 /* Colortext.swift in Sources */,
+				3BA5717623AD53C900631721 /* FAQTableViewCell.swift in Sources */,
 				04F1A64A23A6435100293AA2 /* AppDelegate.swift in Sources */,
 				3B6DD7B723AA745200DB1B7F /* GalleryCollectionViewCell.swift in Sources */,
 				3B3E237423A65DEA003C0123 /* RegisterViewController.swift in Sources */,
@@ -773,6 +800,7 @@
 				3B3E238123A6A135003C0123 /* DrNourMenuViewController.swift in Sources */,
 				04F1A64C23A6435100293AA2 /* SceneDelegate.swift in Sources */,
 				3B6DD7AE23AA68F900DB1B7F /* ReviewsViewController.swift in Sources */,
+				3BA5717023AD52F200631721 /* TitleOfSectionTableViewCell.swift in Sources */,
 				3B11FA0223AA290F0057FE20 /* MyBalalnceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

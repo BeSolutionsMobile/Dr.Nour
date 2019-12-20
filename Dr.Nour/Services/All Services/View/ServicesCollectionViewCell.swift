@@ -13,7 +13,7 @@ class ServicesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var servicesImage: UIImageView!{
         didSet{
             servicesImage.layer.cornerRadius = servicesImage.frame.size.height/2
-            servicesImage.layer.borderWidth = 1
+            //servicesImage.layer.borderWidth = 1
             servicesImage.clipsToBounds = true
             
         }

@@ -29,6 +29,7 @@ class MyBalalnceViewController: UIViewController {
     @IBOutlet weak var moneyYourBalance: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMenuAndBack()
         updateViewDesign()
         
         // Do any additional setup after loading the view.

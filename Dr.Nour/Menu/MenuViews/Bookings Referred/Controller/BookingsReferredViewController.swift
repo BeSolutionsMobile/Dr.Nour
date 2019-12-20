@@ -35,6 +35,7 @@ class BookingsReferredViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMenuAndBack() 
         update()
      
 

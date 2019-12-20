@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Hollywood Smile.png",
+      "filename" : "Hollywood Smile.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Hollywood Smile@2x.png",
+      "filename" : "Hollywood Smile@2x.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Hollywood Smile@3x.png",
+      "filename" : "Hollywood Smile@3x.jpg",
       "scale" : "3x"
     }
   ],

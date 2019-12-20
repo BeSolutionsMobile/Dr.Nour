@@ -19,8 +19,18 @@ class AboutDrNourViewController: UIViewController {
            aboutView.clipsToBounds = true
         }
     }
+    @IBOutlet weak var borderOfImage: UIView!{
+        didSet{
+           borderOfImage.layer.cornerRadius = self.borderOfImage.frame.height/2
+            borderOfImage.layer.borderWidth = 1
+            borderOfImage.layer.borderColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+           
+           
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMenuAndBack()
         updateViewDesign()
 
         // Do any additional setup after loading the view.
@@ -29,6 +39,7 @@ class AboutDrNourViewController: UIViewController {
     func updateViewDesign() {
         
         CustomDesign.customCircleImage(image: drImageProfile)
+       // CustomDesign.cricleViewDesign(view: borderOfImage)
         lineWidth.constant = bigView.frame.width/2
     }
     

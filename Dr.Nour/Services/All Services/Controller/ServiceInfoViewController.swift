@@ -9,6 +9,7 @@
 import UIKit
 import ImageSlideshow
 import BEMCheckBox
+import SideMenu
 
 class ServiceInfoViewController: UIViewController {
     
@@ -43,7 +44,7 @@ class ServiceInfoViewController: UIViewController {
     @IBOutlet weak var bookingNowBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-         rightBackBut()
+        showMenuAndBack() 
         updateViewDesign()
         
         
@@ -88,7 +89,7 @@ class ServiceInfoViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-    
+  
 }
 
 

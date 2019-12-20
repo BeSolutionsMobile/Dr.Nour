@@ -12,9 +12,9 @@ import SideMenu
 class AllServicesViewController: UIViewController {
     
     @IBOutlet weak var contentOfAllServices: UIView!
-    let titlesF = ["BigMac","BigTasty","Chicken-Fillet","ChickenMac","Gaden-Salad"  , "Large-Frise" , "McNuggets-6psc" , "SharingBox"]
+    let titlesF = ["Hollywood Smile","Pediatric Dentistry","Laser","Crowns","Teeth Whitning"  , "Cosmetic Fillings" , "Implant & Oral Surgery" , "Orthodontics"]
     
-    let imagesF = ["BigMac","BigTasty","Chicken-Fillet","ChickenMac","Gaden-Salad"  , "Large-Frise" , "McNuggets-6psc" , "SharingBox"]
+    let imagesF = ["Hollywood Smile","Pediatric Dentistry","Laser","Crowns","Teeth Whitning"  , "Cosmetic Fillings" , "Implant & Oral Surgery" , "Orthodontics"]
     
     @IBOutlet weak var servicesCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -87,18 +87,14 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.contentView.layer.borderColor = UIColor.gray.cgColor
-        cell?.contentView.layer.borderWidth = 2
+       
         let vc = storyboard?.instantiateViewController(withIdentifier: "ServiceInfoViewController") as! ServiceInfoViewController
         vc.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.contentView.layer.borderColor = UIColor.gray.cgColor
-        cell?.contentView.layer.borderWidth = 0
+       
     }
     
 }

@@ -54,7 +54,16 @@ class LoginViewController: UIViewController {
     @IBAction func loginFaceBookBtnPressed(_ sender: UIButton) {
     }
     @IBAction func loginBtnPressed(_ sender: UIButton) {
+        if let vc = storyboard?.instantiateViewController(identifier: "MainNavigationController") as? MainNavigationController {
+                  vc.modalPresentationStyle = .fullScreen
+                  present(vc, animated: true, completion: nil)
+              }
+        
     }
+    
+    
+    
+    
     @IBAction func registerBtnPressed(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(identifier: "RegisterViewController") as? RegisterViewController {
             vc.modalPresentationStyle = .fullScreen
