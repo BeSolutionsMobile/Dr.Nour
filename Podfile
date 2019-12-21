@@ -8,6 +8,9 @@ target 'Dr.Nour' do
   # Pods for Dr.Nour
 
     pod 'SideMenu'
+    pod 'Alamofire', '~> 5.0.0-beta.5'
+    pod 'SDWebImage', '~> 5.0'
+    pod 'SwiftyJSON', '~> 4.0'
     pod 'BEMCheckBox'
     pod 'ImageSlideshow'
     pod 'BiometricAuthentication'

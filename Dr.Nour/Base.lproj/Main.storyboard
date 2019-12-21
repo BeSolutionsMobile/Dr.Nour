@@ -511,7 +511,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="279.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-6N-tKp">
-                                                <rect key="frame" x="157" y="90" width="100" height="100"/>
+                                                <rect key="frame" x="157" y="110" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="0zp-EF-Rm2"/>
                                                     <constraint firstAttribute="height" constant="100" id="9WO-9q-Uvy"/>
@@ -521,7 +521,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="QNU-6N-tKp" firstAttribute="centerX" secondItem="vlc-oz-puF" secondAttribute="centerX" id="LrH-0U-Lnu"/>
-                                            <constraint firstItem="QNU-6N-tKp" firstAttribute="centerY" secondItem="vlc-oz-puF" secondAttribute="centerY" id="WMc-yM-BPK"/>
+                                            <constraint firstItem="QNU-6N-tKp" firstAttribute="centerY" secondItem="vlc-oz-puF" secondAttribute="centerY" constant="20" id="WMc-yM-BPK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -579,13 +579,13 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="803"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0c-OI-pz3">
-                                        <rect key="frame" x="148" y="30" width="118" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="138.5" y="30" width="137.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JGw-Fp-Ne0">
-                                        <rect key="frame" x="25" y="76" width="364" height="727"/>
+                                        <rect key="frame" x="25" y="78" width="364" height="725"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="20" id="EkF-kq-KU9">
                                             <size key="itemSize" width="258" height="271"/>
@@ -608,8 +608,11 @@
                                                                 <constraint firstAttribute="height" constant="140" id="QIZ-Zd-30N"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-71-G8e">
-                                                            <rect key="frame" x="108" y="200.5" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000000000000000000000000000000000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-71-G8e">
+                                                            <rect key="frame" x="44" y="200.5" width="170" height="70.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="170" id="Ebb-8e-swR"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -617,6 +620,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="Aqu-71-G8e" firstAttribute="centerX" secondItem="h72-DZ-C9q" secondAttribute="centerX" id="WL9-EX-LLX"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Aqu-71-G8e" secondAttribute="bottom" id="a92-hf-e6Z"/>
                                                         <constraint firstItem="tf1-Cz-ikx" firstAttribute="centerY" secondItem="h72-DZ-C9q" secondAttribute="centerY" constant="-20" id="b10-b7-lyf"/>
                                                         <constraint firstItem="tf1-Cz-ikx" firstAttribute="centerX" secondItem="h72-DZ-C9q" secondAttribute="centerX" id="csU-Mz-dKk"/>
                                                         <constraint firstItem="Aqu-71-G8e" firstAttribute="top" secondItem="tf1-Cz-ikx" secondAttribute="bottom" constant="15" id="p7S-WC-22K"/>
@@ -939,7 +943,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEi-Wv-SAg">
                                 <rect key="frame" x="30" y="248" width="354" height="400"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-9H-flo">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-9H-flo">
                                         <rect key="frame" x="117" y="50" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="OMb-nR-fZ0"/>
@@ -1042,7 +1046,7 @@ reservation</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-o6-mHV">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="QRR-Tp-88M">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="QRR-Tp-88M">
                                                         <rect key="frame" x="147" y="30" width="120" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="5Qu-i1-bs2"/>
@@ -1068,12 +1072,12 @@ reservation</string>
                                                 <rect key="frame" x="0.0" y="200" width="414" height="270"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eFg-n8-Qbv">
-                                                        <rect key="frame" x="5" y="20" width="404" height="230"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="230"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-WX-de0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="BE2-Fb-tC5">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="BE2-Fb-tC5">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="A9O-jK-SKV"/>
@@ -1081,7 +1085,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-Ko-D19">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1089,9 +1093,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="neM-mE-J9o">
-                                                                <rect key="frame" x="0.0" y="50" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-Ao-rC7">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-Ao-rC7">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="8Pm-LB-Bh9"/>
@@ -1099,7 +1103,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Reservations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QX-hc-AfJ">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1107,9 +1111,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dii-XN-qJi">
-                                                                <rect key="frame" x="0.0" y="100" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-xy-RCZ">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-xy-RCZ">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="GyZ-fe-0fu"/>
@@ -1117,7 +1121,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Referral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LC-OL-daY">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1125,9 +1129,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-fi-SLb">
-                                                                <rect key="frame" x="0.0" y="150" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="RER-d0-qMz">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="RER-d0-qMz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="PKU-5S-Key"/>
@@ -1135,7 +1139,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BooKings Referred Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-TZ-05C">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1143,9 +1147,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Bt-pc-s2d">
-                                                                <rect key="frame" x="0.0" y="200" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="2is-6a-tYO">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="2is-6a-tYO">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="Yyb-Ai-4GW"/>
@@ -1153,7 +1157,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kp8-Wb-wWJ">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1163,13 +1167,13 @@ reservation</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="77l-Qe-jgY">
-                                                        <rect key="frame" x="5" y="20" width="404" height="230"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="230"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EAB-Qv-X65">
-                                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODz-aP-mj9">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="wpH-0t-ByI"/>
                                                                         </connections>
@@ -1177,10 +1181,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-6i-DMz">
-                                                                <rect key="frame" x="0.0" y="50" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Lr-zm7">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="P7F-rF-2ys"/>
                                                                         </connections>
@@ -1188,10 +1192,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="70L-di-yol">
-                                                                <rect key="frame" x="0.0" y="100" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpD-Mh-WX3">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="csp-oY-s6N"/>
                                                                         </connections>
@@ -1199,10 +1203,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-Hf-QQz">
-                                                                <rect key="frame" x="0.0" y="150" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-4N-TlH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="WI0-jE-U7w"/>
                                                                         </connections>
@@ -1210,10 +1214,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-K3-1De">
-                                                                <rect key="frame" x="0.0" y="200" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBX-gf-spH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="8qu-xJ-wDh"/>
                                                                         </connections>
@@ -1227,11 +1231,11 @@ reservation</string>
                                                 <constraints>
                                                     <constraint firstItem="77l-Qe-jgY" firstAttribute="top" secondItem="8J7-wi-g8k" secondAttribute="top" constant="20" id="3RQ-r1-dSk"/>
                                                     <constraint firstAttribute="height" constant="270" id="IDu-s8-Yxd"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eFg-n8-Qbv" secondAttribute="trailing" constant="5" id="S2o-MG-6Rq"/>
-                                                    <constraint firstAttribute="trailing" secondItem="77l-Qe-jgY" secondAttribute="trailing" constant="5" id="Wy8-Ju-xje"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eFg-n8-Qbv" secondAttribute="trailing" constant="10" id="S2o-MG-6Rq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="77l-Qe-jgY" secondAttribute="trailing" constant="10" id="Wy8-Ju-xje"/>
                                                     <constraint firstItem="eFg-n8-Qbv" firstAttribute="top" secondItem="8J7-wi-g8k" secondAttribute="top" constant="20" id="bdb-qZ-g81"/>
-                                                    <constraint firstItem="eFg-n8-Qbv" firstAttribute="leading" secondItem="8J7-wi-g8k" secondAttribute="leading" constant="5" id="dNC-Wt-RwL"/>
-                                                    <constraint firstItem="77l-Qe-jgY" firstAttribute="leading" secondItem="8J7-wi-g8k" secondAttribute="leading" constant="5" id="hPH-e9-g96"/>
+                                                    <constraint firstItem="eFg-n8-Qbv" firstAttribute="leading" secondItem="8J7-wi-g8k" secondAttribute="leading" constant="10" id="dNC-Wt-RwL"/>
+                                                    <constraint firstItem="77l-Qe-jgY" firstAttribute="leading" secondItem="8J7-wi-g8k" secondAttribute="leading" constant="10" id="hPH-e9-g96"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJj-83-DlJ">
@@ -1244,12 +1248,12 @@ reservation</string>
                                                 <rect key="frame" x="0.0" y="475" width="414" height="325"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-Lh-FBi">
-                                                        <rect key="frame" x="5" y="20" width="404" height="280"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="280"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URF-nT-mKJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="9C1-F5-MFi">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="9C1-F5-MFi">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="MFk-r1-47R"/>
@@ -1257,7 +1261,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About De Nour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opY-5n-dnH">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1265,9 +1269,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wl2-tS-4a3">
-                                                                <rect key="frame" x="0.0" y="50" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="BJL-Dn-atJ">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="BJL-Dn-atJ">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="5TG-lE-yhk"/>
@@ -1275,7 +1279,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq6-Es-Zvl">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1283,9 +1287,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZqQ-Hu-L8Z">
-                                                                <rect key="frame" x="0.0" y="100" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-ma-oo5">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-ma-oo5">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="Tl5-cW-R4v"/>
@@ -1293,7 +1297,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kns-cI-Cxs">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1301,9 +1305,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-bu-2xK">
-                                                                <rect key="frame" x="0.0" y="150" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-Xc-84y">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-Xc-84y">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="30" id="Iwj-Cu-5Ot"/>
@@ -1311,7 +1315,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-x1-qib">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1319,9 +1323,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kqq-l4-OoO">
-                                                                <rect key="frame" x="0.0" y="200" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="qba-lT-dUg">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="qba-lT-dUg">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="jPJ-vs-6wG"/>
@@ -1329,7 +1333,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdB-nH-uz6">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1337,9 +1341,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-4n-pwB">
-                                                                <rect key="frame" x="0.0" y="250" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="250" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-st-Qll">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-st-Qll">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="30" id="764-pF-Obg"/>
@@ -1347,7 +1351,7 @@ reservation</string>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVx-bM-tQi">
-                                                                        <rect key="frame" x="40" y="0.0" width="364" height="30"/>
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1357,13 +1361,13 @@ reservation</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SDk-JS-xwr">
-                                                        <rect key="frame" x="5" y="20" width="404" height="280"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="280"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Tu-JE-Nrv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s94-c2-5an">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="MLT-FQ-rKh"/>
                                                                         </connections>
@@ -1371,10 +1375,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G9E-oO-jyS">
-                                                                <rect key="frame" x="0.0" y="50" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOm-iy-tES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="U2Y-i1-YGy"/>
                                                                         </connections>
@@ -1382,10 +1386,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hH9-AT-SUE">
-                                                                <rect key="frame" x="0.0" y="100" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-kO-x9S">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="N4n-Mh-Tuu"/>
                                                                         </connections>
@@ -1393,10 +1397,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-qs-MX1">
-                                                                <rect key="frame" x="0.0" y="150" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsK-eY-MN7">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="7YD-jK-fkB"/>
                                                                         </connections>
@@ -1404,10 +1408,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LVG-RM-JbE">
-                                                                <rect key="frame" x="0.0" y="200" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pid-io-XZ3">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="gTi-ka-Rne"/>
                                                                         </connections>
@@ -1415,10 +1419,10 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-Mw-dvw">
-                                                                <rect key="frame" x="0.0" y="250" width="404" height="30"/>
+                                                                <rect key="frame" x="0.0" y="250" width="394" height="30"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o21-Z0-4iZ">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="logOutBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="C9U-6E-3qc"/>
                                                                         </connections>
@@ -1430,12 +1434,12 @@ reservation</string>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="SDk-JS-xwr" secondAttribute="trailing" constant="5" id="55I-2c-85M"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SDk-JS-xwr" secondAttribute="trailing" constant="10" id="55I-2c-85M"/>
                                                     <constraint firstAttribute="height" constant="325" id="EUV-aJ-8u8"/>
                                                     <constraint firstItem="sfh-Lh-FBi" firstAttribute="top" secondItem="VcG-xt-Xv0" secondAttribute="top" constant="20" id="FyD-RJ-wnc"/>
-                                                    <constraint firstItem="SDk-JS-xwr" firstAttribute="leading" secondItem="VcG-xt-Xv0" secondAttribute="leading" constant="5" id="WjW-V6-RyY"/>
-                                                    <constraint firstAttribute="trailing" secondItem="sfh-Lh-FBi" secondAttribute="trailing" constant="5" id="a2Q-gU-UKq"/>
-                                                    <constraint firstItem="sfh-Lh-FBi" firstAttribute="leading" secondItem="VcG-xt-Xv0" secondAttribute="leading" constant="5" id="diL-Ar-aM4"/>
+                                                    <constraint firstItem="SDk-JS-xwr" firstAttribute="leading" secondItem="VcG-xt-Xv0" secondAttribute="leading" constant="10" id="WjW-V6-RyY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sfh-Lh-FBi" secondAttribute="trailing" constant="10" id="a2Q-gU-UKq"/>
+                                                    <constraint firstItem="sfh-Lh-FBi" firstAttribute="leading" secondItem="VcG-xt-Xv0" secondAttribute="leading" constant="10" id="diL-Ar-aM4"/>
                                                     <constraint firstItem="SDk-JS-xwr" firstAttribute="top" secondItem="VcG-xt-Xv0" secondAttribute="top" constant="20" id="tqO-zM-gfU"/>
                                                 </constraints>
                                             </view>
@@ -1528,7 +1532,7 @@ reservation</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="LN3-gJ-Pn7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Personal Info" translatesAutoresizingMaskIntoConstraints="NO" id="LN3-gJ-Pn7">
                                 <rect key="frame" x="0.0" y="483.5" width="414" height="412.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6o-qd-GyN">
@@ -1546,7 +1550,7 @@ reservation</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="WL3-QB-Hi6">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="WL3-QB-Hi6">
                                                         <rect key="frame" x="25" y="33.5" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="51z-oG-yxh"/>
@@ -1581,7 +1585,7 @@ reservation</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="fFq-3s-V5O">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="fFq-3s-V5O">
                                                         <rect key="frame" x="25" y="26" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="BKc-ku-9C8"/>
@@ -1616,7 +1620,7 @@ reservation</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-13-GGY">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changePassword" translatesAutoresizingMaskIntoConstraints="NO" id="tHa-13-GGY">
                                                         <rect key="frame" x="25" y="26" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="T4V-E1-ZTv"/>
@@ -1661,7 +1665,7 @@ reservation</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-Lf-4C0">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-Lf-4C0">
                                                         <rect key="frame" x="25" y="26" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="46Q-Tx-WqS"/>
@@ -1703,7 +1707,7 @@ reservation</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-e7-YzF">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-e7-YzF">
                                                         <rect key="frame" x="25" y="26" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="EIk-7e-yF1"/>
@@ -1891,7 +1895,7 @@ reservation</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8h-zZ-1li">
                                 <rect key="frame" x="30" y="298" width="354" height="300"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-ul-Y56">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="hkk-ul-Y56">
                                         <rect key="frame" x="117" y="20" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="acO-oW-2Ii"/>
@@ -1970,7 +1974,7 @@ reservation</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-1t-FrV">
                                 <rect key="frame" x="30" y="298" width="354" height="300"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-D4-oaK">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-D4-oaK">
                                         <rect key="frame" x="117" y="20" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="eRw-5F-XA8"/>
@@ -2049,7 +2053,7 @@ reservation</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUb-Bq-79A">
                                 <rect key="frame" x="30" y="248" width="354" height="400"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WcC-Co-Zpm">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="WcC-Co-Zpm">
                                         <rect key="frame" x="117" y="50" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="SNU-12-QBW"/>
@@ -2144,7 +2148,7 @@ reservation</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8Y-TJ-q0f">
                                 <rect key="frame" x="30" y="248" width="354" height="400"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-bf-p7S">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-bf-p7S">
                                         <rect key="frame" x="117" y="50" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="mGb-Wg-Ayf"/>
@@ -2239,7 +2243,7 @@ reservation</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfV-yY-L46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1027.536231884058" y="3308.7053571428569"/>
+            <point key="canvasLocation" x="1014" y="3309"/>
         </scene>
         <!--My Referrals-->
         <scene sceneID="BPZ-Mw-fiC">
@@ -2406,6 +2410,7 @@ reservation</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="backgroundColor" name="FooterColor"/>
                                         <constraints>
                                             <constraint firstItem="rsi-Eu-00x" firstAttribute="centerX" secondItem="OQp-Uc-va7" secondAttribute="centerX" id="NFk-sV-thQ"/>
                                             <constraint firstItem="rsi-Eu-00x" firstAttribute="centerY" secondItem="OQp-Uc-va7" secondAttribute="centerY" constant="10" id="oil-GG-huo"/>
@@ -2873,7 +2878,7 @@ reservation</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XaK-G8-bc2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="847"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="g3P-t4-wfQ">
                                     <size key="itemSize" width="237" height="244"/>
@@ -2942,7 +2947,7 @@ reservation</string>
                         <constraints>
                             <constraint firstItem="XaK-G8-bc2" firstAttribute="leading" secondItem="ZHd-bB-KGW" secondAttribute="leading" id="4Ng-Ww-nDF"/>
                             <constraint firstItem="XaK-G8-bc2" firstAttribute="top" secondItem="ZHd-bB-KGW" secondAttribute="top" id="Nod-px-uiH"/>
-                            <constraint firstAttribute="bottom" secondItem="XaK-G8-bc2" secondAttribute="bottom" id="UoL-bL-zpn"/>
+                            <constraint firstAttribute="bottom" secondItem="XaK-G8-bc2" secondAttribute="bottom" constant="5" id="UoL-bL-zpn"/>
                             <constraint firstItem="XaK-G8-bc2" firstAttribute="trailing" secondItem="ZHd-bB-KGW" secondAttribute="trailing" id="fhR-fV-KJF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZHd-bB-KGW"/>
@@ -3084,7 +3089,7 @@ reservation</string>
                                             <constraint firstAttribute="width" constant="130" id="qcX-GE-JgX"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageSilder1" translatesAutoresizingMaskIntoConstraints="NO" id="LjC-1j-Ite">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutDrNour" translatesAutoresizingMaskIntoConstraints="NO" id="LjC-1j-Ite">
                                         <rect key="frame" x="147" y="15" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="LHr-WF-9hu"/>
@@ -3121,7 +3126,7 @@ reservation</string>
                                                         <rect key="frame" x="30" y="75" width="354" height="422"/>
                                                         <attributedString key="attributedText">
                                                             <fragment>
-                                                                <mutableString key="content">Dr. Nour El Din Mostafa Center Is One Of The Largest Dental Clinics All Over The World Constructed In Egypt On An Area Over 2000 M2, Having More Than 20 Dental Clinics And 250 Employees. Our Dental Team Composed Of Highly Qualified Consultants And Specialists Having Respectful Well Known International Degrees As Australian And American Board, Masters And Ph.D. Degrees And Membership Of Royal College Of Eden Bar. Dr Nour Center Cofounded By Dr. Nour El-Din Mustafa In 2000 Based On The Idea Of “Immediate Cosmetic Dentistry Without Pain” Instead Of Visiting The Dental Clinic More Frequently To Do The Cosmetic Procedure. Now The Patient Can Get</mutableString>
+                                                                <string key="content">Dr. Nour El Din Mostafa Center Is One Of The Largest Dental Clinics All Over The World Constructed In Egypt On An Area Over 2000 M2, Having More Than 20 Dental Clinics And 250 Employees. Our Dental Team Composed Of Highly Qualified Consultants And Specialists Having Respectful Well Known International Degrees As Australian And American Board, Masters And Ph.D. Degrees And Membership Of Royal College Of Eden Bar. Dr Nour Center Cofounded By Dr. Nour El-Din Mustafa In 2000 Based On The Idea Of “Immediate Cosmetic Dentistry Without Pain” Instead Of Visiting The Dental Clinic More Frequently To Do The Cosmetic Procedure. Now The Patient Can Get</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" metaFont="system" size="17"/>
@@ -3191,18 +3196,28 @@ reservation</string>
     <resources>
         <image name="Cosmetic Fillings" width="166" height="111"/>
         <image name="DrNourImg" width="250" height="250"/>
+        <image name="Personal Info" width="360" height="261"/>
         <image name="Union 17" width="20" height="14"/>
+        <image name="aboutDrNour" width="284" height="284"/>
         <image name="bg" width="320" height="178"/>
+        <image name="changePassword" width="19" height="20"/>
+        <image name="email" width="19" height="20"/>
         <image name="envelope.fill" catalog="system" width="64" height="46"/>
         <image name="facebook-logo" width="10" height="19"/>
         <image name="imageApp" width="94" height="70"/>
-        <image name="imageSilder1" width="320" height="320"/>
         <image name="lock.fill" catalog="system" width="64" height="64"/>
         <image name="menu1" width="22" height="19"/>
+        <image name="name" width="20" height="23"/>
+        <image name="phone" width="19" height="19"/>
         <image name="phone.fill" catalog="system" width="64" height="56"/>
-        <image name="user" width="42.5" height="42.5"/>
+        <image name="photo" width="19" height="15"/>
+        <image name="profile" width="260" height="171.5"/>
+        <image name="sidemenu1" width="13" height="13"/>
         <namedColor name="FaceBookColor">
             <color red="0.063000001013278961" green="0.13600000739097595" blue="0.38499999046325684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="FooterColor">
+            <color red="0.25" green="0.25" blue="0.25400000810623169" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="LineColor">
             <color red="0.80800002813339233" green="0.80800002813339233" blue="0.80800002813339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
