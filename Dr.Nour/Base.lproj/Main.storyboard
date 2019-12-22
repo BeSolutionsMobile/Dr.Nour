@@ -1106,10 +1106,10 @@ reservation</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-wi-g8k">
-                                                <rect key="frame" x="0.0" y="200" width="414" height="270"/>
+                                                <rect key="frame" x="0.0" y="200" width="414" height="324"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eFg-n8-Qbv">
-                                                        <rect key="frame" x="10" y="20" width="394" height="230"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="280"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-WX-de0">
                                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
@@ -1121,7 +1121,25 @@ reservation</string>
                                                                             <constraint firstAttribute="height" constant="30" id="Hm8-1v-WzX"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-Ko-D19">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDx-Ko-D19">
+                                                                        <rect key="frame" x="40" y="0.0" width="354" height="30"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l9V-0r-DyB">
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="EKi-xB-x6F">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="AcN-eU-3dq"/>
+                                                                            <constraint firstAttribute="width" constant="30" id="AyT-Fu-0h0"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uO-8m-0D3">
                                                                         <rect key="frame" x="40" y="0.0" width="354" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -1130,7 +1148,7 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="neM-mE-J9o">
-                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-Ao-rC7">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -1148,7 +1166,7 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dii-XN-qJi">
-                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-xy-RCZ">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -1166,7 +1184,7 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-fi-SLb">
-                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="RER-d0-qMz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -1184,7 +1202,7 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Bt-pc-s2d">
-                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="250" width="394" height="30"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu1" translatesAutoresizingMaskIntoConstraints="NO" id="2is-6a-tYO">
                                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -1204,7 +1222,7 @@ reservation</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="77l-Qe-jgY">
-                                                        <rect key="frame" x="10" y="20" width="394" height="230"/>
+                                                        <rect key="frame" x="10" y="20" width="394" height="280"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EAB-Qv-X65">
                                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
@@ -1212,15 +1230,26 @@ reservation</string>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODz-aP-mj9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
-                                                                            <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="wpH-0t-ByI"/>
+                                                                            <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="BDL-mY-thj"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-xq-bh3">
+                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlb-qM-tJ0">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                                                        <connections>
+                                                                            <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="9bJ-XV-lEB"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-6i-DMz">
-                                                                <rect key="frame" x="0.0" y="50" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Lr-zm7">
+                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Lr-zm7">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="P7F-rF-2ys"/>
@@ -1229,9 +1258,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="70L-di-yol">
-                                                                <rect key="frame" x="0.0" y="100" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpD-Mh-WX3">
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpD-Mh-WX3">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="csp-oY-s6N"/>
@@ -1240,9 +1269,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jgc-Hf-QQz">
-                                                                <rect key="frame" x="0.0" y="150" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-4N-TlH">
+                                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-4N-TlH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="WI0-jE-U7w"/>
@@ -1251,9 +1280,9 @@ reservation</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-K3-1De">
-                                                                <rect key="frame" x="0.0" y="200" width="394" height="30"/>
+                                                                <rect key="frame" x="0.0" y="250" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBX-gf-spH">
+                                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBX-gf-spH">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="8qu-xJ-wDh"/>
@@ -1267,7 +1296,7 @@ reservation</string>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="77l-Qe-jgY" firstAttribute="top" secondItem="8J7-wi-g8k" secondAttribute="top" constant="20" id="3RQ-r1-dSk"/>
-                                                    <constraint firstAttribute="height" constant="270" id="IDu-s8-Yxd"/>
+                                                    <constraint firstAttribute="height" constant="324" id="IDu-s8-Yxd"/>
                                                     <constraint firstAttribute="trailing" secondItem="eFg-n8-Qbv" secondAttribute="trailing" constant="10" id="S2o-MG-6Rq"/>
                                                     <constraint firstAttribute="trailing" secondItem="77l-Qe-jgY" secondAttribute="trailing" constant="10" id="Wy8-Ju-xje"/>
                                                     <constraint firstItem="eFg-n8-Qbv" firstAttribute="top" secondItem="8J7-wi-g8k" secondAttribute="top" constant="20" id="bdb-qZ-g81"/>
@@ -1276,13 +1305,13 @@ reservation</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJj-83-DlJ">
-                                                <rect key="frame" x="0.0" y="470" width="414" height="5"/>
+                                                <rect key="frame" x="0.0" y="524" width="414" height="5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="5" id="pDr-9X-NdL"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VcG-xt-Xv0">
-                                                <rect key="frame" x="0.0" y="475" width="414" height="325"/>
+                                                <rect key="frame" x="0.0" y="529" width="414" height="325"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-Lh-FBi">
                                                         <rect key="frame" x="10" y="20" width="394" height="280"/>
@@ -1403,7 +1432,7 @@ reservation</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Tu-JE-Nrv">
                                                                 <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s94-c2-5an">
+                                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s94-c2-5an">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="MLT-FQ-rKh"/>
@@ -1414,7 +1443,7 @@ reservation</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G9E-oO-jyS">
                                                                 <rect key="frame" x="0.0" y="50" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOm-iy-tES">
+                                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOm-iy-tES">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="U2Y-i1-YGy"/>
@@ -1425,7 +1454,7 @@ reservation</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hH9-AT-SUE">
                                                                 <rect key="frame" x="0.0" y="100" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-kO-x9S">
+                                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-kO-x9S">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="N4n-Mh-Tuu"/>
@@ -1436,7 +1465,7 @@ reservation</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-qs-MX1">
                                                                 <rect key="frame" x="0.0" y="150" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsK-eY-MN7">
+                                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsK-eY-MN7">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="7YD-jK-fkB"/>
@@ -1447,7 +1476,7 @@ reservation</string>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LVG-RM-JbE">
                                                                 <rect key="frame" x="0.0" y="200" width="394" height="30"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pid-io-XZ3">
+                                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pid-io-XZ3">
                                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
                                                                         <connections>
                                                                             <action selector="itemMenuBtnPressed:" destination="u2o-6L-Lox" eventType="touchUpInside" id="gTi-ka-Rne"/>
@@ -1998,7 +2027,109 @@ reservation</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dni-gL-gbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="3309"/>
+            <point key="canvasLocation" x="-1354" y="3309"/>
+        </scene>
+        <!--Add Your Photo View Controller-->
+        <scene sceneID="spb-cM-jqm">
+            <objects>
+                <viewController storyboardIdentifier="AddYourPhotoViewController" id="jkP-XY-aM4" customClass="AddYourPhotoViewController" customModule="Dr_Nour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Gm-kC-cVR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-1S-xvs">
+                                <rect key="frame" x="30" y="223" width="354" height="450"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="bgo-wQ-7uS">
+                                        <rect key="frame" x="117" y="30" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="TFd-mJ-Mj9"/>
+                                            <constraint firstAttribute="width" constant="120" id="Vfz-Gv-RMA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLu-XO-mcn">
+                                        <rect key="frame" x="115.5" y="174.5" width="123" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="SkyColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-Gk-lzq">
+                                        <rect key="frame" x="0.0" y="195.5" width="354" height="254.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="0fb-IO-WpL">
+                                                <rect key="frame" x="88.5" y="20" width="177" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Bbi-A9-FCn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlG-Vv-Wl9">
+                                                <rect key="frame" x="50" y="195" width="254" height="40"/>
+                                                <color key="backgroundColor" name="SkyColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="VQm-WV-apN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Add your photo">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addPhotoBtnPressed:" destination="jkP-XY-aM4" eventType="touchUpInside" id="PS3-Oe-NXT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2W-U1-uAA">
+                                                <rect key="frame" x="88.5" y="20" width="177" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="gMa-54-s8k"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ImageBtnPressed:" destination="jkP-XY-aM4" eventType="touchUpInside" id="2yB-pq-ifS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QlG-Vv-Wl9" firstAttribute="top" secondItem="0fb-IO-WpL" secondAttribute="bottom" constant="25" id="Vnu-6w-c80"/>
+                                            <constraint firstItem="QlG-Vv-Wl9" firstAttribute="centerX" secondItem="PWV-Gk-lzq" secondAttribute="centerX" id="WDf-ae-otb"/>
+                                            <constraint firstItem="d2W-U1-uAA" firstAttribute="width" secondItem="PWV-Gk-lzq" secondAttribute="width" multiplier="1:2" id="avK-03-evi"/>
+                                            <constraint firstItem="0fb-IO-WpL" firstAttribute="top" secondItem="PWV-Gk-lzq" secondAttribute="top" constant="20" id="nUp-jn-Woc"/>
+                                            <constraint firstItem="0fb-IO-WpL" firstAttribute="centerX" secondItem="PWV-Gk-lzq" secondAttribute="centerX" id="sox-Ry-QXp"/>
+                                            <constraint firstItem="0fb-IO-WpL" firstAttribute="width" secondItem="PWV-Gk-lzq" secondAttribute="width" multiplier="1:2" id="t4n-Hp-mnk"/>
+                                            <constraint firstItem="d2W-U1-uAA" firstAttribute="centerX" secondItem="PWV-Gk-lzq" secondAttribute="centerX" id="vLM-Fc-ATA"/>
+                                            <constraint firstAttribute="trailing" secondItem="QlG-Vv-Wl9" secondAttribute="trailing" constant="50" id="x0d-cd-vOr"/>
+                                            <constraint firstItem="d2W-U1-uAA" firstAttribute="top" secondItem="PWV-Gk-lzq" secondAttribute="top" constant="20" id="xIo-8c-5SQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="PopBg"/>
+                                <constraints>
+                                    <constraint firstItem="HLu-XO-mcn" firstAttribute="centerY" secondItem="b1t-1S-xvs" secondAttribute="centerY" constant="-40" id="0dy-Pd-9Kq"/>
+                                    <constraint firstItem="bgo-wQ-7uS" firstAttribute="centerX" secondItem="b1t-1S-xvs" secondAttribute="centerX" id="1lf-8N-3Gr"/>
+                                    <constraint firstAttribute="bottom" secondItem="PWV-Gk-lzq" secondAttribute="bottom" id="8b0-bJ-P32"/>
+                                    <constraint firstAttribute="trailing" secondItem="PWV-Gk-lzq" secondAttribute="trailing" id="RsJ-fK-uKE"/>
+                                    <constraint firstItem="PWV-Gk-lzq" firstAttribute="leading" secondItem="b1t-1S-xvs" secondAttribute="leading" id="a7f-57-Keh"/>
+                                    <constraint firstItem="PWV-Gk-lzq" firstAttribute="top" secondItem="HLu-XO-mcn" secondAttribute="bottom" id="dU3-TO-iN9"/>
+                                    <constraint firstAttribute="height" constant="450" id="lRh-4z-c9g"/>
+                                    <constraint firstItem="HLu-XO-mcn" firstAttribute="centerX" secondItem="b1t-1S-xvs" secondAttribute="centerX" id="laR-KR-dgW"/>
+                                    <constraint firstItem="bgo-wQ-7uS" firstAttribute="top" secondItem="b1t-1S-xvs" secondAttribute="top" constant="30" id="q3a-aj-4r4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.26712328767123289" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b1t-1S-xvs" firstAttribute="centerX" secondItem="7Gm-kC-cVR" secondAttribute="centerX" id="kPh-3b-Vgv"/>
+                            <constraint firstItem="b1t-1S-xvs" firstAttribute="leading" secondItem="jnp-Yu-sUh" secondAttribute="leading" constant="30" id="q1s-de-Ew9"/>
+                            <constraint firstItem="b1t-1S-xvs" firstAttribute="centerY" secondItem="7Gm-kC-cVR" secondAttribute="centerY" id="zqT-av-oDq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jnp-Yu-sUh"/>
+                    </view>
+                    <connections>
+                        <outlet property="addPhotoBtn" destination="QlG-Vv-Wl9" id="vbv-Ch-04U"/>
+                        <outlet property="imageProfile" destination="0fb-IO-WpL" id="Er8-XH-ETF"/>
+                        <outlet property="popupView" destination="b1t-1S-xvs" id="gJ5-0M-lHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6R-m7-G1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646.37681159420299" y="3308.7053571428569"/>
         </scene>
         <!--Change Password View Controller-->
         <scene sceneID="YAT-nO-k8R">
@@ -2009,7 +2140,7 @@ reservation</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6e-1t-FrV">
-                                <rect key="frame" x="30" y="298" width="354" height="300"/>
+                                <rect key="frame" x="30" y="248" width="354" height="400"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageApp" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-D4-oaK">
                                         <rect key="frame" x="117" y="20" width="120" height="120"/>
@@ -2018,22 +2149,52 @@ reservation</string>
                                             <constraint firstAttribute="height" constant="120" id="xiJ-Qw-Q3n"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-1d-do4" customClass="DesignableUITextField" customModule="Dr_Nour" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="165" width="314" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="7Pb-RZ-9AI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.fill" catalog="system"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-L4-ECc">
+                                        <rect key="frame" x="20" y="165" width="314" height="144"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJg-1d-do4" customClass="DesignableUITextField" customModule="Dr_Nour" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-BM-JWc" customClass="DesignableUITextField" customModule="Dr_Nour" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="49" width="314" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3i4-lu-gXq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RE-New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZNw-1R-t3Y" customClass="DesignableUITextField" customModule="Dr_Nour" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="104" width="314" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="q9p-0d-b3e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="lock.fill" catalog="system"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybl-z2-xFi">
-                                        <rect key="frame" x="50" y="230" width="254" height="40"/>
+                                        <rect key="frame" x="50" y="334" width="254" height="40"/>
                                         <color key="backgroundColor" name="SkyColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="9z4-ZE-yjj"/>
@@ -2049,14 +2210,14 @@ reservation</string>
                                 </subviews>
                                 <color key="backgroundColor" name="PopBg"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AJg-1d-do4" secondAttribute="trailing" constant="20" id="23r-or-BeA"/>
-                                    <constraint firstAttribute="height" constant="300" id="393-4O-jWx"/>
+                                    <constraint firstItem="PIB-L4-ECc" firstAttribute="top" secondItem="gBk-D4-oaK" secondAttribute="bottom" constant="25" id="0IQ-w4-bmP"/>
+                                    <constraint firstAttribute="height" constant="400" id="393-4O-jWx"/>
                                     <constraint firstItem="ybl-z2-xFi" firstAttribute="centerX" secondItem="I6e-1t-FrV" secondAttribute="centerX" id="7Oi-IN-2UN"/>
-                                    <constraint firstItem="AJg-1d-do4" firstAttribute="top" secondItem="gBk-D4-oaK" secondAttribute="bottom" constant="25" id="H1e-bs-Kra"/>
+                                    <constraint firstAttribute="trailing" secondItem="PIB-L4-ECc" secondAttribute="trailing" constant="20" id="TkU-oc-IpS"/>
+                                    <constraint firstItem="PIB-L4-ECc" firstAttribute="leading" secondItem="I6e-1t-FrV" secondAttribute="leading" constant="20" id="Wf2-a9-hk6"/>
                                     <constraint firstItem="gBk-D4-oaK" firstAttribute="centerX" secondItem="I6e-1t-FrV" secondAttribute="centerX" id="ak5-fx-mw4"/>
-                                    <constraint firstItem="AJg-1d-do4" firstAttribute="leading" secondItem="I6e-1t-FrV" secondAttribute="leading" constant="20" id="fQB-1j-iG0"/>
                                     <constraint firstAttribute="trailing" secondItem="ybl-z2-xFi" secondAttribute="trailing" constant="50" id="gly-3K-4xy"/>
-                                    <constraint firstItem="ybl-z2-xFi" firstAttribute="top" secondItem="AJg-1d-do4" secondAttribute="bottom" constant="25" id="kmH-pn-MVT"/>
+                                    <constraint firstItem="ybl-z2-xFi" firstAttribute="top" secondItem="PIB-L4-ECc" secondAttribute="bottom" constant="25" id="m8i-mG-JCo"/>
                                     <constraint firstItem="gBk-D4-oaK" firstAttribute="top" secondItem="I6e-1t-FrV" secondAttribute="top" constant="20" id="r0x-xh-MbK"/>
                                 </constraints>
                             </view>
@@ -2077,7 +2238,7 @@ reservation</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfs-eL-43o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1345" y="3309"/>
+            <point key="canvasLocation" x="-2019" y="3309"/>
         </scene>
         <!--Data Of Reserviations View Controller-->
         <scene sceneID="bfq-dy-Qhe">
@@ -3241,6 +3402,7 @@ reservation</string>
         <image name="email" width="19" height="20"/>
         <image name="envelope.fill" catalog="system" width="64" height="46"/>
         <image name="facebook-logo" width="10" height="19"/>
+        <image name="image" width="170.5" height="170.5"/>
         <image name="imageApp" width="94" height="70"/>
         <image name="lock.fill" catalog="system" width="64" height="64"/>
         <image name="menu1" width="22" height="19"/>

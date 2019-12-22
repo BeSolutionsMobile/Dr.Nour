@@ -28,6 +28,7 @@
 		3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */; };
 		3B21EBFB23A92A1900D02C12 /* BookingsReferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */; };
 		3B21EBFD23A92A3600D02C12 /* BookingsReferredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */; };
+		3B22333323AFA63F003A0905 /* AddYourPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22333223AFA63F003A0905 /* AddYourPhotoViewController.swift */; };
 		3B23CA0223ACF02C00276908 /* LunchCricleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23CA0123ACF02C00276908 /* LunchCricleView.swift */; };
 		3B3E236123A65485003C0123 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235423A65484003C0123 /* UserDefault.swift */; };
 		3B3E236223A65485003C0123 /* ConstantMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E235623A65484003C0123 /* ConstantMenu.swift */; };
@@ -104,6 +105,7 @@
 		3B21EBF523A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOfMyReferralsPopupViewController.swift; sourceTree = "<group>"; };
 		3B21EBFA23A92A1900D02C12 /* BookingsReferredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredViewController.swift; sourceTree = "<group>"; };
 		3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsReferredTableViewCell.swift; sourceTree = "<group>"; };
+		3B22333223AFA63F003A0905 /* AddYourPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourPhotoViewController.swift; sourceTree = "<group>"; };
 		3B23CA0123ACF02C00276908 /* LunchCricleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCricleView.swift; sourceTree = "<group>"; };
 		3B3E235423A65484003C0123 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		3B3E235623A65484003C0123 /* ConstantMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantMenu.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				3B13107923A7765A007F989C /* PersonalInfoViewController.swift */,
 				3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */,
 				3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */,
+				3B22333223AFA63F003A0905 /* AddYourPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				3B6DD7AE23AA68F900DB1B7F /* ReviewsViewController.swift in Sources */,
 				3BA5717023AD52F200631721 /* TitleOfSectionTableViewCell.swift in Sources */,
 				3B11FA0223AA290F0057FE20 /* MyBalalnceViewController.swift in Sources */,
+				3B22333323AFA63F003A0905 /* AddYourPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

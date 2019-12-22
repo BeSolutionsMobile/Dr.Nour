@@ -46,7 +46,9 @@ class PersonalInfoViewController: UIViewController {
         
     }
     @IBAction func addYourPhotoBtnPressed(_ sender: UIButton) {
-        
+        let vc = storyboard?.instantiateViewController(identifier: "AddYourPhotoViewController") as! AddYourPhotoViewController
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     
     }
     

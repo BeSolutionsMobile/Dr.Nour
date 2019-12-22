@@ -19,8 +19,8 @@ class AllServicesViewController: UIViewController {
     @IBOutlet weak var servicesCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-         updateViewDesign()
-                
+        updateViewDesign()
+        
         
         // Do any additional setup after loading the view.
     }
@@ -36,8 +36,8 @@ class AllServicesViewController: UIViewController {
     
     @IBAction func menuItemPressed(_ sender: UIBarButtonItem) {
         let vc = storyboard?.instantiateViewController(identifier: "SideMenuNavigationController") as! SideMenuNavigationController
-                       vc.settings = SharedMenu.settings(view: self.view)
-                      present(vc, animated: true, completion: nil)
+        vc.settings = SharedMenu.settings(view: self.view)
+        present(vc, animated: true, completion: nil)
     }
     
 }
@@ -52,7 +52,7 @@ extension AllServicesViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let cellSize = CGSize(width: self.view.frame.width/2 , height: self.view.frame.width / 2 + 30)
-           return cellSize
+        return cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -61,7 +61,10 @@ extension AllServicesViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+        
     }
+    
+    
 }
 
 //end of extension  ViewController
@@ -80,16 +83,10 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ServicesCollectionViewCell", for: indexPath) as! ServicesCollectionViewCell
         let cellIndex = indexPath.item
+        
         cell.servicesImage.image = UIImage(named: imagesF[cellIndex])
         cell.servicesNmaeLbl.text = titlesF[cellIndex]
-        if indexPath.row % 2 == 0 {
-                     print("\(indexPath.row) is even number")
-                     
-                 } else {
-                     print("\(indexPath.row) is odd number")
-                     cell.line1.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                     
-                 }
+        
         if indexPath.row == titlesF.count - 1  ||  indexPath.row == titlesF.count - 2  {
             cell.line2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }
@@ -98,16 +95,29 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "ServiceInfoViewController") as! ServiceInfoViewController
         vc.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-       
+        
     }
-    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ServicesCollectionViewCell else {return}
+        
+        if indexPath.row % 2 == 0 {
+            print("\(indexPath.row) is even number")
+            
+        } else {
+            print("\(indexPath.row) is odd number")
+            cell.line1.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            
+        }
+        
+        
+    }
 }
 
 
