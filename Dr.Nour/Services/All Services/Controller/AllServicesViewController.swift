@@ -47,11 +47,11 @@ class AllServicesViewController: UIViewController {
 extension AllServicesViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let cellSize = CGSize(width: self.view.frame.width/2 - 35, height: self.view.frame.width/2)
+        let cellSize = CGSize(width: self.view.frame.width/2 , height: self.view.frame.width / 2 + 30)
            return cellSize
     }
     
@@ -60,7 +60,7 @@ extension AllServicesViewController : UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 0
     }
 }
 
@@ -82,6 +82,17 @@ extension AllServicesViewController : UICollectionViewDataSource , UICollectionV
         let cellIndex = indexPath.item
         cell.servicesImage.image = UIImage(named: imagesF[cellIndex])
         cell.servicesNmaeLbl.text = titlesF[cellIndex]
+        if indexPath.row % 2 == 0 {
+                     print("\(indexPath.row) is even number")
+                     
+                 } else {
+                     print("\(indexPath.row) is odd number")
+                     cell.line1.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                     
+                 }
+        if indexPath.row == titlesF.count - 1  ||  indexPath.row == titlesF.count - 2  {
+            cell.line2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
         
         
         return cell

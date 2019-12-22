@@ -20,5 +20,6 @@ class ServicesCollectionViewCell: UICollectionViewCell {
     }
     @IBOutlet weak var servicesNmaeLbl: UILabel!
     
-
+    @IBOutlet weak var line1: UIView!    
+    @IBOutlet weak var line2: UIView!
 }

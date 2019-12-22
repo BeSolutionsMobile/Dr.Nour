@@ -11,10 +11,8 @@ import SideMenu
 
 
 struct ConstantMenu {
-        var menu1ItemTxet = ["Personal info", "My reservations" , " My referral" , "  BooKings referred me" ,"My Balance" ]
-        var menu2ItemTxet = ["About de Nour", "FAQ" , "Reviews" , "  Gallery" ,"Contact us"
-    ,  "LogOut"]
-    var controller1 = ["PersonalInfoViewController", "MyReservationsViewController" ,  "MyReferralsViewController"  , "BookingsReferredViewController" ,"MyBalalnceViewController" , "AboutDrNourViewController" , "FAQViewController" , "ReviewsViewController" , "GalleryViewController","ContactusViewController"]
+       
+    var controller1 = ["PersonalInfoViewController", "MyReservationsViewController" ,  "MyReferralsViewController"  , "BookingsReferredViewController" ,"MyBalalnceViewController" , "AboutDrNourViewController" , "FAQViewController" , "Re]viewsViewController" , "GalleryViewController","ContactusViewController"]
     
     
 }
@@ -29,6 +27,7 @@ class SharedMenu {
         var settings = SideMenuSettings()
         settings.presentationStyle = presentationStyle
         settings.menuWidth = view.frame.width-view.frame.width*(1/6)
+        settings.statusBarEndAlpha = 0
         return settings
     }
 }
