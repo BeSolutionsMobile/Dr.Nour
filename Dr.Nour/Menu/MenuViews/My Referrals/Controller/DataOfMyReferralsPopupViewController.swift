@@ -21,7 +21,12 @@ class DataOfMyReferralsPopupViewController: UIViewController {
     }
     var delegate: BookingsReferredDelegate?
     
-    @IBOutlet weak var profilePopupImage: UIImageView!
+    @IBOutlet weak var profilePopupImage: UIImageView!{
+        didSet{
+            profilePopupImage.layer.cornerRadius = profilePopupImage.frame.size.height/2
+            profilePopupImage.clipsToBounds = true
+        }
+    }
     @IBOutlet weak var namePopupLbl: UILabel!
     @IBOutlet weak var dataJoinLbl: UILabel!
     @IBOutlet weak var numberOfBookings: UILabel!
@@ -30,9 +35,15 @@ class DataOfMyReferralsPopupViewController: UIViewController {
         super.viewDidLoad()
         updateViewDesign()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
+        view.addGestureRecognizer(tapGesture)
+        
         // Do any additional setup after loading the view.
     }
-    
+    @objc func tabToClosePopup()  {
+         dismiss(animated: true, completion: nil)
+       }
+
     
     func updateViewDesign() {
         

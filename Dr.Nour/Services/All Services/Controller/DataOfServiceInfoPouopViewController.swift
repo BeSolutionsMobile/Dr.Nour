@@ -21,10 +21,15 @@ class DataOfServiceInfoPouopViewController: UIViewController {
     @IBOutlet weak var messageDescription: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
+        view.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
-    
+    @objc func tabToClosePopup()  {
+            dismiss(animated: true, completion: nil)
+          }
 
     /*
     // MARK: - Navigation

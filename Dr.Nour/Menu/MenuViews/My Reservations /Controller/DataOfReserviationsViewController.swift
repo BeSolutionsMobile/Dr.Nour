@@ -29,12 +29,12 @@ class DataOfReserviationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
-        bigView.addGestureRecognizer(tapGesture)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
+        view.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
-    @objc func tableViewTapped()  {
+    @objc func tabToClosePopup()  {
          dismiss(animated: true, completion: nil)
        }
     

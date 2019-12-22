@@ -19,7 +19,9 @@ class MyReferralsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        showMenuAndBack() 
+        showMenuAndBack()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -33,6 +35,9 @@ extension MyReferralsViewController  : UITableViewDelegate , UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyReferralsTableViewCell", for: indexPath) as! MyReferralsTableViewCell
       // cell.textLabel?.text = titlesF[indexPath.row]
+        let chevron = UIImage(named: "back")
+        cell.accessoryType = .disclosureIndicator
+        cell.accessoryView = UIImageView(image: chevron!)
               
               return cell
     }
@@ -49,7 +54,7 @@ extension MyReferralsViewController  : UITableViewDelegate , UITableViewDataSour
       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
              let vc = storyboard?.instantiateViewController(identifier: "DataOfMyReferralsPopupViewController") as! DataOfMyReferralsPopupViewController
-//               // vc.modalPresentationStyle = .overFullScreen
+                 vc.modalPresentationStyle = .overFullScreen
               vc.delegate = self
              self.present(vc, animated: true, completion: nil)
           
@@ -63,7 +68,7 @@ extension MyReferralsViewController: BookingsReferredDelegate {
     func transferBookings() {
         let vc = storyboard?.instantiateViewController(identifier: "BookingsReferredViewController") as! BookingsReferredViewController
         vc.titlebar = "Ahmed Reservations"
-        vc.color = UIColor.init(named: "FooterColor")
+        vc.color = UIColor.init(named: "SkyColor")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

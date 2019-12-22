@@ -1,38 +1,52 @@
 PODS:
+  - Alamofire (5.0.0-rc.3)
   - BEMCheckBox (1.4.1)
   - BiometricAuthentication (3.1.2)
   - ImageSlideshow (1.8.1):
     - ImageSlideshow/Core (= 1.8.1)
   - ImageSlideshow/Core (1.8.1)
-  - KNSwitcher (1.0.1)
+  - LabelSwitch (0.1.6)
   - Player (0.13.2)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
   - SideMenu (6.4.7)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
   - BEMCheckBox
   - BiometricAuthentication
   - ImageSlideshow
-  - KNSwitcher
+  - LabelSwitch
   - Player
+  - SDWebImage (~> 5.0)
   - SideMenu
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - BEMCheckBox
     - BiometricAuthentication
     - ImageSlideshow
-    - KNSwitcher
+    - LabelSwitch
     - Player
+    - SDWebImage
     - SideMenu
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   BiometricAuthentication: 36445f3ab77699489f91995bed887be89890afac
   ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
-  KNSwitcher: 4dfdd348238c02aab298f4c6269f68fd08293793
+  LabelSwitch: 7f2120e1a567c35daefbcdd509405b63af6661ec
   Player: 7a2bcad3631034fa47d4b6fdedf7c4075fc236fe
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   SideMenu: 928a015669c3afc201e1fe3a87f1b0bc8993a664
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 7dfaeffedffe4ebd108a3ed9d758b879ed9c44a8
+PODFILE CHECKSUM: 7bf48c58ce875e0ff8a792c322db76bf9ec90dc1
 
 COCOAPODS: 1.8.4

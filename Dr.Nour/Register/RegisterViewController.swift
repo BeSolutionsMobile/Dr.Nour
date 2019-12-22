@@ -8,6 +8,7 @@
 
 import UIKit
 import BEMCheckBox
+import LabelSwitch
 
 class RegisterViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var phoneTf: UITextField!
     @IBOutlet weak var passwordTf: UITextField!
-    @IBOutlet weak var switchBtn: UISwitch!
+    @IBOutlet weak var switchPodBtn: LabelSwitch!
     @IBOutlet weak var codeTf: UITextField!
     @IBOutlet weak var checkView: BEMCheckBox!{
         didSet{
@@ -34,10 +35,19 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViewDesign()
+       
+
+         
 
         // Do any additional setup after loading the view.
     }
+    
+   
     func updateViewDesign() {
+        switchPodBtn.delegate = self 
+        switchPodBtn.curState = .R
+        switchPodBtn.circleShadow = false
+        switchPodBtn.fullSizeTapEnabled = true
         CustomDesign.customTextFaild(textField: fullNameTf)
         CustomDesign.customTextFaild(textField: emailTf)
         CustomDesign.customTextFaild(textField: phoneTf)
@@ -58,4 +68,14 @@ class RegisterViewController: UIViewController {
     @IBAction func loginFaceBookBtnPressed(_ sender: UIButton) {
     }
     
+}
+
+
+extension RegisterViewController: LabelSwitchDelegate {
+    func switchChangToState(sender: LabelSwitch) {
+        switch sender.curState {
+        case .L: print("circle on left")
+        case .R: print("circle on right")
+        }
+    }
 }

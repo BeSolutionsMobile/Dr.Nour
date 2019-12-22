@@ -7,17 +7,17 @@
 //
 
 import UIKit
-
+import SDWebImage
 class DrNourMenuViewController: UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
-        /*{
+        {
         didSet{
             Rounded.roundedImage(imageView: profileImage)
-            profileImage.sd_setImage(with: URL(string: ""), placeholderImage: UIImage(named: "userPlaceholder"))
+            profileImage.sd_setImage(with: URL(string: ""), placeholderImage: UIImage(named: "profile"))
         }
     }
- */
+
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var bigViewOfScroll: UIView!{
         didSet{

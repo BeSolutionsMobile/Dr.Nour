@@ -15,7 +15,7 @@ target 'Dr.Nour' do
     pod 'ImageSlideshow'
     pod 'BiometricAuthentication'
     pod 'Player'
-    pod 'KNSwitcher'
+    pod 'LabelSwitch'
 
 
 

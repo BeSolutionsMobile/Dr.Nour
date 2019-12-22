@@ -34,12 +34,14 @@ class PersonalInfoViewController: UIViewController {
     
     @IBAction func changePasswordBtnPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(identifier: "ChangePasswordViewController") as! ChangePasswordViewController
+        vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
         
     }
     
     @IBAction func addYourPhoneBtnPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(identifier: "AddYourPhoneViewController") as! AddYourPhoneViewController
+        vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
         
     }

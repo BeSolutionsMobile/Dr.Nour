@@ -60,7 +60,7 @@ extension MyReservationsViewController  : UITableViewDelegate , UITableViewDataS
       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          
               let vc = storyboard?.instantiateViewController(identifier: "DataOfReserviationsViewController") as! DataOfReserviationsViewController
-               // vc.modalPresentationStyle = .overFullScreen
+                vc.modalPresentationStyle = .overFullScreen
               self.present(vc, animated: true, completion: nil)
           
       }

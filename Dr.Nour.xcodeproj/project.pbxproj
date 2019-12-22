@@ -55,6 +55,7 @@
 		3BCF529823A7AF4900F84D70 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */; };
 		3BCF529A23A7AF8700F84D70 /* AddYourPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */; };
 		3BCF529C23A7BC2200F84D70 /* ServiceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF529B23A7BC2200F84D70 /* ServiceInfoViewController.swift */; };
+		3BD61AD023AE43C100E7EAE1 /* SwiftDisclosureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD61ACF23AE43C100E7EAE1 /* SwiftDisclosureIndicator.swift */; };
 		C62B4673022E8E15F04AE803 /* Pods_Dr_Nour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5095890162EAACE75BD0C35 /* Pods_Dr_Nour.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +131,7 @@
 		3BCF529723A7AF4900F84D70 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		3BCF529923A7AF8700F84D70 /* AddYourPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourPhoneViewController.swift; sourceTree = "<group>"; };
 		3BCF529B23A7BC2200F84D70 /* ServiceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfoViewController.swift; sourceTree = "<group>"; };
+		3BD61ACF23AE43C100E7EAE1 /* SwiftDisclosureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDisclosureIndicator.swift; sourceTree = "<group>"; };
 		6CB5B85EE0B025425011A93E /* Pods-Dr.Nour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Nour.release.xcconfig"; path = "Target Support Files/Pods-Dr.Nour/Pods-Dr.Nour.release.xcconfig"; sourceTree = "<group>"; };
 		B0270C91B7BF022C5FFEE56B /* Pods-Dr.Nour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dr.Nour.debug.xcconfig"; path = "Target Support Files/Pods-Dr.Nour/Pods-Dr.Nour.debug.xcconfig"; sourceTree = "<group>"; };
 		B5095890162EAACE75BD0C35 /* Pods_Dr_Nour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dr_Nour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -426,6 +428,7 @@
 				3B3E235F23A65485003C0123 /* CustemDesign.swift */,
 				3B3E236023A65485003C0123 /* DesignableUITextField.swift */,
 				3B23CA0123ACF02C00276908 /* LunchCricleView.swift */,
+				3BD61ACF23AE43C100E7EAE1 /* SwiftDisclosureIndicator.swift */,
 			);
 			path = Utitlites;
 			sourceTree = "<group>";
@@ -771,6 +774,7 @@
 				3B3E237B23A67625003C0123 /* ServicesCollectionViewCell.swift in Sources */,
 				3B21EBF423A8DA5300D02C12 /* MyReferralsTableViewCell.swift in Sources */,
 				3BCF529A23A7AF8700F84D70 /* AddYourPhoneViewController.swift in Sources */,
+				3BD61AD023AE43C100E7EAE1 /* SwiftDisclosureIndicator.swift in Sources */,
 				3B21EBF623A8FD6F00D02C12 /* DataOfMyReferralsPopupViewController.swift in Sources */,
 				3BCF529C23A7BC2200F84D70 /* ServiceInfoViewController.swift in Sources */,
 				3B13107A23A7765A007F989C /* PersonalInfoViewController.swift in Sources */,

@@ -76,7 +76,6 @@ class ServiceInfoViewController: UIViewController {
      
      @objc func didTap() {
      let fullScreenController = imageSildeOfDrNour.presentFullScreenController(from: self)
-   
      fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
      }
     
@@ -85,7 +84,6 @@ class ServiceInfoViewController: UIViewController {
     @IBAction func bookingNowBtnPressed(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(identifier: "DataOfServiceInfoPouopViewController") as! DataOfServiceInfoPouopViewController
          vc.modalPresentationStyle = .overFullScreen
-
         self.present(vc, animated: true, completion: nil)
     }
     

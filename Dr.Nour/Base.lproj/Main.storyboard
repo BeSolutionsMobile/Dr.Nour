@@ -352,10 +352,6 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWn-9T-U0d">
-                                                        <rect key="frame" x="335" y="29" width="51" height="31"/>
-                                                        <color key="onTintColor" name="SkyColor"/>
-                                                    </switch>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Referral code No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVf-er-gkV">
                                                         <rect key="frame" x="30" y="108" width="354" height="34"/>
                                                         <constraints>
@@ -364,16 +360,36 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spG-2A-aEi" customClass="LabelSwitch" customModule="LabelSwitch">
+                                                        <rect key="frame" x="294" y="9.5" width="90" height="70"/>
+                                                        <color key="backgroundColor" name="SkyColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="1X0-Mh-gjC"/>
+                                                            <constraint firstAttribute="height" constant="70" id="LK9-xi-kaf"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="lText" value="On"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="rText" value="Off"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lBackColor">
+                                                                <color key="value" name="SkyColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="rBackColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="BVf-er-gkV" firstAttribute="leading" secondItem="vee-Ts-ed6" secondAttribute="leading" constant="30" id="1qB-ty-Ryu"/>
-                                                    <constraint firstItem="SWn-9T-U0d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lb3-sI-IPc" secondAttribute="trailing" constant="8" symbolic="YES" id="C5I-lT-g9b"/>
                                                     <constraint firstItem="lb3-sI-IPc" firstAttribute="leading" secondItem="vee-Ts-ed6" secondAttribute="leading" constant="30" id="Em8-hv-U3J"/>
                                                     <constraint firstItem="BVf-er-gkV" firstAttribute="centerY" secondItem="vee-Ts-ed6" secondAttribute="centerY" constant="30" id="Fif-IY-jhb"/>
                                                     <constraint firstItem="BVf-er-gkV" firstAttribute="centerX" secondItem="vee-Ts-ed6" secondAttribute="centerX" id="JiY-rB-5wh"/>
                                                     <constraint firstItem="lb3-sI-IPc" firstAttribute="top" secondItem="vee-Ts-ed6" secondAttribute="top" constant="34" id="Kt6-Ds-GYK"/>
-                                                    <constraint firstAttribute="trailing" secondItem="SWn-9T-U0d" secondAttribute="trailing" constant="30" id="oTC-2O-eaP"/>
-                                                    <constraint firstItem="SWn-9T-U0d" firstAttribute="centerY" secondItem="lb3-sI-IPc" secondAttribute="centerY" id="xG1-xZ-02l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="spG-2A-aEi" secondAttribute="trailing" constant="30" id="hFe-ZS-mbb"/>
+                                                    <constraint firstItem="spG-2A-aEi" firstAttribute="centerY" secondItem="lb3-sI-IPc" secondAttribute="centerY" id="r87-gL-tkm"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-Zf-eLm">
@@ -560,7 +576,7 @@
                         <outlet property="passwordTf" destination="Zao-QI-UOa" id="yYc-Ry-BJs"/>
                         <outlet property="phoneTf" destination="Tyq-ka-qIh" id="YiJ-9O-Mja"/>
                         <outlet property="registerBtn" destination="5yB-hV-t2i" id="ZyW-d5-Ox1"/>
-                        <outlet property="switchBtn" destination="SWn-9T-U0d" id="Dkm-O9-r86"/>
+                        <outlet property="switchPodBtn" destination="spG-2A-aEi" id="7pk-LF-Bja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHo-Y3-D9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
