@@ -42,10 +42,25 @@ class DrNourMenuViewController: UIViewController {
         }
     }
      let menuItem = ConstantMenu()
+    let ImagePicker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+         ImagePicker.delegate = self
+        getData()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func getData() {
+        profileImage.sd_setImage(with: URL(string: UserDefault.getPhoto()), placeholderImage: UIImage(named: "profile"))
+        
+    }
+    
+    
+    @IBAction func changePhoto(_ sender: UIButton) {
+        ImagePicker.sourceType = .photoLibrary
+        present(ImagePicker, animated: true, completion: nil)
     }
     
     
@@ -62,4 +77,13 @@ class DrNourMenuViewController: UIViewController {
     }
     
     
+}
+
+extension DrNourMenuViewController: UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let imageData = info[.originalImage] as! UIImage
+        profileImage.image = imageData
+        _ = FirebaseUploader.uploadToFirebase(viewController: self, imagePicker: ImagePicker, didFinishPickingMediaWithInfo: info)
+        
+    }
 }

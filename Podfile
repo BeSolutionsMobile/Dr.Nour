@@ -8,7 +8,6 @@ target 'Dr.Nour' do
   # Pods for Dr.Nour
 
     pod 'SideMenu'
-    pod 'Alamofire', '~> 5.0.0-beta.5'
     pod 'SDWebImage', '~> 5.0'
     pod 'SwiftyJSON', '~> 4.0'
     pod 'BEMCheckBox'
@@ -16,6 +15,11 @@ target 'Dr.Nour' do
     pod 'BiometricAuthentication'
     pod 'Player'
     pod 'LabelSwitch'
+    pod 'Firebase/Core'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+    pod "ImageSlideshow/Alamofire"
+
 
 
 

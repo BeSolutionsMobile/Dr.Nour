@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>740603323757-jiv6ehsnmo881rd8h5nnhngg2tvhtast.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.740603323757-jiv6ehsnmo881rd8h5nnhngg2tvhtast</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOz-PPmet-90LJYsS99T1kXMcgU7Z8XGE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>740603323757</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.begroup.Dr-Nour</string>
+	<key>PROJECT_ID</key>
+	<string>dr-nour</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dr-nour.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:740603323757:ios:477bc77ea6f9f7bc38a664</string>
+	<key>DATABASE_URL</key>
+	<string>https://dr-nour.firebaseio.com</string>
+</dict>
+</plist>

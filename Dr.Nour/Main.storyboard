@@ -1096,13 +1096,25 @@ reservation</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq1-aD-NAq">
+                                                        <rect key="frame" x="147" y="30" width="120" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="5cc-sq-1tj"/>
+                                                            <constraint firstAttribute="width" constant="120" id="toC-aP-mzq"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changePhoto:" destination="u2o-6L-Lox" eventType="touchUpInside" id="OY0-6W-ORS"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="0yH-3m-kkZ"/>
                                                     <constraint firstItem="QRR-Tp-88M" firstAttribute="centerX" secondItem="dX3-o6-mHV" secondAttribute="centerX" id="A1g-m0-21i"/>
                                                     <constraint firstItem="kTh-dc-1Ca" firstAttribute="centerX" secondItem="dX3-o6-mHV" secondAttribute="centerX" id="Edj-0g-bYd"/>
+                                                    <constraint firstItem="Sq1-aD-NAq" firstAttribute="top" secondItem="dX3-o6-mHV" secondAttribute="top" constant="30" id="ZFm-vp-Med"/>
                                                     <constraint firstItem="QRR-Tp-88M" firstAttribute="top" secondItem="dX3-o6-mHV" secondAttribute="top" constant="30" id="a7o-aL-EUW"/>
                                                     <constraint firstItem="kTh-dc-1Ca" firstAttribute="top" secondItem="QRR-Tp-88M" secondAttribute="bottom" constant="20" id="jXP-ES-rQX"/>
+                                                    <constraint firstItem="Sq1-aD-NAq" firstAttribute="centerX" secondItem="dX3-o6-mHV" secondAttribute="centerX" id="kY6-ez-acE"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-wi-g8k">
@@ -2451,7 +2463,7 @@ reservation</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pwg-Eq-3JM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyReferrals" translatesAutoresizingMaskIntoConstraints="NO" id="pwg-Eq-3JM">
                                 <rect key="frame" x="0.0" y="455" width="414" height="441"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvW-sW-Nzw">
@@ -3006,7 +3018,7 @@ reservation</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="New-9n-XVh" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="New-9n-XVh" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                         <rect key="frame" x="0.0" y="56" width="414" height="360"/>
                                     </view>
                                 </subviews>
@@ -3029,9 +3041,8 @@ reservation</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-xy-ha4" customClass="PlayerView" customModule="Player">
-                                        <rect key="frame" x="0.0" y="56" width="414" height="360"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-xy-ha4" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                        <rect key="frame" x="0.0" y="56" width="414" height="340"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -3040,7 +3051,7 @@ reservation</string>
                                     <constraint firstItem="HMM-xy-ha4" firstAttribute="top" secondItem="7hN-JT-IvQ" secondAttribute="bottom" constant="10" id="MDg-Vn-pJe"/>
                                     <constraint firstItem="7hN-JT-IvQ" firstAttribute="centerX" secondItem="pDg-yE-Mwd" secondAttribute="centerX" id="O04-Pe-QvO"/>
                                     <constraint firstItem="7hN-JT-IvQ" firstAttribute="top" secondItem="pDg-yE-Mwd" secondAttribute="top" constant="25" id="ZZa-f5-UUl"/>
-                                    <constraint firstAttribute="bottom" secondItem="HMM-xy-ha4" secondAttribute="bottom" constant="10" id="w1y-O5-bbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="HMM-xy-ha4" secondAttribute="bottom" constant="30" id="w1y-O5-bbN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -3061,11 +3072,46 @@ reservation</string>
                     <connections>
                         <outlet property="imagesReviewsView" destination="KCq-k6-h90" id="e67-sf-wbu"/>
                         <outlet property="imagesReviewsViewSlider" destination="New-9n-XVh" id="sP4-YO-xHj"/>
+                        <outlet property="videoSliderView" destination="HMM-xy-ha4" id="ICQ-6O-MxS"/>
+                        <outlet property="videoView" destination="pDg-yE-Mwd" id="M8D-pH-buI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ym-Fj-Srz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4760.8695652173919" y="2554.6875"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="vX4-H3-MXa">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="z8p-Ie-tbF" customClass="VideoViewController" customModule="Dr_Nour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9j6-2b-ZaW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSV-aM-DlT">
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="xEt-XO-hBp"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tSV-aM-DlT" firstAttribute="centerY" secondItem="9j6-2b-ZaW" secondAttribute="centerY" id="Ura-Wb-laK"/>
+                            <constraint firstItem="wuu-ZV-Eew" firstAttribute="trailing" secondItem="tSV-aM-DlT" secondAttribute="trailing" id="hTX-V2-RHw"/>
+                            <constraint firstItem="tSV-aM-DlT" firstAttribute="centerX" secondItem="9j6-2b-ZaW" secondAttribute="centerX" id="ilk-WD-8u3"/>
+                            <constraint firstItem="tSV-aM-DlT" firstAttribute="leading" secondItem="wuu-ZV-Eew" secondAttribute="leading" id="vbH-Xg-H5n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wuu-ZV-Eew"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoWebView" destination="tSV-aM-DlT" id="xu3-EE-dM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AHo-OQ-I4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4761" y="3206"/>
         </scene>
         <!--Gallery-->
         <scene sceneID="1kF-4Q-l5J">
@@ -3167,7 +3213,7 @@ reservation</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrNourImg" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-EE-7eT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact us" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-EE-7eT">
                                 <rect key="frame" x="0.0" y="646" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="U17-oI-jNh"/>
@@ -3392,12 +3438,12 @@ reservation</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Contact us" width="718" height="236"/>
         <image name="Cosmetic Fillings" width="166" height="111"/>
-        <image name="DrNourImg" width="250" height="250"/>
+        <image name="MyReferrals" width="581" height="411"/>
         <image name="Personal Info" width="360" height="261"/>
         <image name="Union 17" width="20" height="14"/>
         <image name="aboutDrNour" width="284" height="284"/>
-        <image name="bg" width="320" height="178"/>
         <image name="changePassword" width="19" height="20"/>
         <image name="email" width="19" height="20"/>
         <image name="envelope.fill" catalog="system" width="64" height="46"/>
