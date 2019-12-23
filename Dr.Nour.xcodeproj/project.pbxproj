@@ -193,12 +193,9 @@
 				04F1A64923A6435100293AA2 /* AppDelegate.swift */,
 				04F1A64B23A6435100293AA2 /* SceneDelegate.swift */,
 				04F1A64D23A6435100293AA2 /* ViewController.swift */,
-				3B3E235323A65484003C0123 /* Shared */,
 				3B3E235B23A65485003C0123 /* Utitlites */,
-				3B3E236D23A654BA003C0123 /* Login */,
-				3B3E237223A65DD7003C0123 /* Register */,
-				3B3E237523A67355003C0123 /* Services */,
-				3B3E235523A65484003C0123 /* Menu */,
+				3B3E235323A65484003C0123 /* Shared */,
+				3B26A6B623B0B6A100BFF4BD /* Senarios */,
 				04F1A64F23A6435100293AA2 /* Main.storyboard */,
 				04F1A65223A6435300293AA2 /* Assets.xcassets */,
 				04F1A65423A6435300293AA2 /* LaunchScreen.storyboard */,
@@ -401,6 +398,17 @@
 				3B21EBFC23A92A3600D02C12 /* BookingsReferredTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3B26A6B623B0B6A100BFF4BD /* Senarios */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E236D23A654BA003C0123 /* Login */,
+				3B3E237223A65DD7003C0123 /* Register */,
+				3B3E237523A67355003C0123 /* Services */,
+				3B3E235523A65484003C0123 /* Menu */,
+			);
+			path = Senarios;
 			sourceTree = "<group>";
 		};
 		3B3E235323A65484003C0123 /* Shared */ = {
