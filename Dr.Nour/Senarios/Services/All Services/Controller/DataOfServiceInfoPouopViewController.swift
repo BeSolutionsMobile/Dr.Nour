@@ -10,6 +10,7 @@ import UIKit
 
 class DataOfServiceInfoPouopViewController: UIViewController {
 
+    @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var popView: UIView!{
         didSet{
            popView.layer.cornerRadius = 20
@@ -23,7 +24,7 @@ class DataOfServiceInfoPouopViewController: UIViewController {
         super.viewDidLoad()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-        view.addGestureRecognizer(tapGesture)
+        bigView.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }

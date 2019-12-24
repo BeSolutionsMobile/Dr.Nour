@@ -13,12 +13,15 @@ target 'Dr.Nour' do
     pod 'BEMCheckBox'
     pod 'ImageSlideshow'
     pod 'BiometricAuthentication'
-    pod 'Player'
     pod 'LabelSwitch'
     pod 'Firebase/Core'
     pod 'Firebase/Storage'
     pod 'Firebase/Firestore'
-    pod "ImageSlideshow/Alamofire"
+    pod 'Alamofire', '~> 5.0.0-beta.5'
+    pod "ImageSlideshow/Kingfisher"
+
+
+
 
 
 

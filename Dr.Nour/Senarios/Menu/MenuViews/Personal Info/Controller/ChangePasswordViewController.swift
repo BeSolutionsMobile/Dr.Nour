@@ -9,14 +9,19 @@
 import UIKit
 
 class ChangePasswordViewController: UIViewController {
-
+    @IBOutlet weak var bigView: UIView!
+    
     @IBOutlet weak var popView: UIView!{
         didSet{
            popView.layer.cornerRadius = 20
            popView.clipsToBounds = true
         }
     }
-    @IBOutlet weak var newPasswordTf: DesignableUITextField!
+    @IBOutlet weak var oldPasswordTf: DesignableUITextField!
+    
+    @IBOutlet weak var addNewPasswordTf: DesignableUITextField!
+    
+    @IBOutlet weak var reTypeNewPassword: DesignableUITextField!
     @IBOutlet weak var changeBtn: UIButton!{
         didSet{
            changeBtn.layer.cornerRadius = changeBtn.frame.size.height/2
@@ -27,7 +32,7 @@ class ChangePasswordViewController: UIViewController {
         super.viewDidLoad()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-        view.addGestureRecognizer(tapGesture)
+        bigView.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }

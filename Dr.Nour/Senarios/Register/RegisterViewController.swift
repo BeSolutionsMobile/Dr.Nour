@@ -68,6 +68,10 @@ class RegisterViewController: UIViewController {
     @IBAction func loginFaceBookBtnPressed(_ sender: UIButton) {
     }
     
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 

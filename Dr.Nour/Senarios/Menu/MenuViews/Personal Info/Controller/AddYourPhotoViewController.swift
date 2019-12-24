@@ -10,6 +10,7 @@ import UIKit
 
 class AddYourPhotoViewController: UIViewController {
 
+    @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var popupView: UIView!{
         didSet{
            popupView.layer.cornerRadius = 20
@@ -23,11 +24,14 @@ class AddYourPhotoViewController: UIViewController {
            addPhotoBtn.clipsToBounds = true
         }
     }
+    
+    let ImagePicker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        addDelegate()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-        view.addGestureRecognizer(tapGesture)
+        bigView.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
@@ -36,20 +40,28 @@ class AddYourPhotoViewController: UIViewController {
     @objc func tabToClosePopup()  {
       dismiss(animated: true, completion: nil)
     }
+    
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addDelegate()  {
+         ImagePicker.delegate = self
     }
-    */
+
+  
 
     @IBAction func ImageBtnPressed(_ sender: UIButton) {
+             ImagePicker.sourceType = .photoLibrary
+              present(ImagePicker, animated: true, completion: nil)
     }
     @IBAction func addPhotoBtnPressed(_ sender: UIButton) {
+    }
+}
+
+extension AddYourPhotoViewController: UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let imageData = info[.originalImage] as! UIImage
+         imageProfile.image = imageData
+         Rounded.roundedImage(imageView: imageProfile)
+        _ = FirebaseUploader.uploadToFirebase(viewController: self, imagePicker: ImagePicker, didFinishPickingMediaWithInfo: info)
+        
     }
 }

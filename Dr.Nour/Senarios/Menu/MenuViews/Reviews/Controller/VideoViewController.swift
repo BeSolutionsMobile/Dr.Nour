@@ -9,22 +9,23 @@
 import UIKit
 
 class VideoViewController: UIViewController {
-    
+    var url : String?
+
     @IBOutlet weak var videoWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getVideo()
+        getVideo(link: url!)
         // Do any additional setup after loading the view.
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-                 view.addGestureRecognizer(tapGesture)
+        view.addGestureRecognizer(tapGesture)
     }
     @objc func tabToClosePopup()  {
       dismiss(animated: true, completion: nil)
     }
 
-    func getVideo() {
+    func getVideo(link : String) {
         
-        let url = URL(string: "https://www.youtube.com/embed/vL1FyHB-p7o")
+        let url = URL(string: link)
         videoWebView.loadRequest(URLRequest(url: url!))
         
     }

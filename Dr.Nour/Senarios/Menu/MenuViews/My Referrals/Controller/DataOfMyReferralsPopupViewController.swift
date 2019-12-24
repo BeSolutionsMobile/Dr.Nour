@@ -13,6 +13,7 @@ protocol BookingsReferredDelegate {
 }
 class DataOfMyReferralsPopupViewController: UIViewController {
     
+    @IBOutlet weak var bigView: UIView!
     @IBOutlet weak var popView: UIView!{
         didSet{
             popView.layer.cornerRadius = 20
@@ -36,7 +37,7 @@ class DataOfMyReferralsPopupViewController: UIViewController {
         updateViewDesign()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-        view.addGestureRecognizer(tapGesture)
+        bigView.addGestureRecognizer(tapGesture)
         
         // Do any additional setup after loading the view.
     }

@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>740603323757-jiv6ehsnmo881rd8h5nnhngg2tvhtast.apps.googleusercontent.com</string>
+	<string>601206499514-bo0252iik8667k3i99bf0s5lp46qjttj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.740603323757-jiv6ehsnmo881rd8h5nnhngg2tvhtast</string>
+	<string>com.googleusercontent.apps.601206499514-bo0252iik8667k3i99bf0s5lp46qjttj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>601206499514-03rqrcvo70cpdsvs65vhlksh3r3g0263.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBOz-PPmet-90LJYsS99T1kXMcgU7Z8XGE</string>
+	<string>AIzaSyB4TGwnsJV2LbtrDI1CzfpLlNLBAqdn8ys</string>
 	<key>GCM_SENDER_ID</key>
-	<string>740603323757</string>
+	<string>601206499514</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.begroup.Dr-Nour</string>
 	<key>PROJECT_ID</key>
-	<string>dr-nour</string>
+	<string>drnourandroid</string>
 	<key>STORAGE_BUCKET</key>
-	<string>dr-nour.appspot.com</string>
+	<string>drnourandroid.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:740603323757:ios:477bc77ea6f9f7bc38a664</string>
+	<string>1:601206499514:ios:c2f8bb61b3e0399171fa83</string>
 	<key>DATABASE_URL</key>
-	<string>https://dr-nour.firebaseio.com</string>
+	<string>https://drnourandroid.firebaseio.com</string>
 </dict>
 </plist>

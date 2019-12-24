@@ -9,6 +9,8 @@
 import UIKit
 import ImageSlideshow
 import AVKit
+import SDWebImage
+
 
 class ReviewsViewController: UIViewController {
     
@@ -51,15 +53,15 @@ class ReviewsViewController: UIViewController {
         imagesReviewsViewSlider.setImageInputs([
                 ImageSource(image: UIImage(named: "imageSilder1")!),
                 ImageSource(image: UIImage(named: "imageSilder2")!),
-                AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!
+                KingfisherSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!
                ])
         
         
         
         videoSliderView.setImageInputs([
             ImageSource(image: UIImage(named: "imageSilder1")!),
-            AlamofireSource(urlString: "https://img.youtube.com/vi/vL1FyHB-p7o/0.jpg")!,
-            AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!
+            KingfisherSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!,
+            KingfisherSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!
         ])
         
         
@@ -117,6 +119,7 @@ class ReviewsViewController: UIViewController {
       }
     @objc func didTap2() {
         if let vc = storyboard?.instantiateViewController(identifier: "VideoViewController") as? VideoViewController {
+            vc.url = "https://www.youtube.com/embed/vL1FyHB-p7o"
                   vc.modalPresentationStyle = .fullScreen
                   present(vc, animated: true, completion: nil)
               }

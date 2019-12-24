@@ -30,7 +30,7 @@ class DataOfReserviationsViewController: UIViewController {
         super.viewDidLoad()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tabToClosePopup))
-        view.addGestureRecognizer(tapGesture)
+        bigView.addGestureRecognizer(tapGesture)
 
         // Do any additional setup after loading the view.
     }
