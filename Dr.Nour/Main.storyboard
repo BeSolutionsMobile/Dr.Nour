@@ -738,7 +738,7 @@
             <objects>
                 <viewController storyboardIdentifier="ServiceInfoViewController" id="EhF-NC-XKg" customClass="ServiceInfoViewController" customModule="Dr_Nour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hpe-eJ-yIa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C5-td-gaV">
@@ -3454,7 +3454,7 @@ reservation</string>
                                                         <rect key="frame" x="30" y="75" width="354" height="422"/>
                                                         <attributedString key="attributedText">
                                                             <fragment>
-                                                                <mutableString key="content">Dr. Nour El Din Mostafa Center Is One Of The Largest Dental Clinics All Over The World Constructed In Egypt On An Area Over 2000 M2, Having More Than 20 Dental Clinics And 250 Employees. Our Dental Team Composed Of Highly Qualified Consultants And Specialists Having Respectful Well Known International Degrees As Australian And American Board, Masters And Ph.D. Degrees And Membership Of Royal College Of Eden Bar. Dr Nour Center Cofounded By Dr. Nour El-Din Mustafa In 2000 Based On The Idea Of “Immediate Cosmetic Dentistry Without Pain” Instead Of Visiting The Dental Clinic More Frequently To Do The Cosmetic Procedure. Now The Patient Can Get</mutableString>
+                                                                <string key="content">Dr. Nour El Din Mostafa Center Is One Of The Largest Dental Clinics All Over The World Constructed In Egypt On An Area Over 2000 M2, Having More Than 20 Dental Clinics And 250 Employees. Our Dental Team Composed Of Highly Qualified Consultants And Specialists Having Respectful Well Known International Degrees As Australian And American Board, Masters And Ph.D. Degrees And Membership Of Royal College Of Eden Bar. Dr Nour Center Cofounded By Dr. Nour El-Din Mustafa In 2000 Based On The Idea Of “Immediate Cosmetic Dentistry Without Pain” Instead Of Visiting The Dental Clinic More Frequently To Do The Cosmetic Procedure. Now The Patient Can Get</string>
                                                                 <attributes>
                                                                     <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
@@ -3557,7 +3557,7 @@ reservation</string>
             <color red="0.92199999094009399" green="0.96299999952316284" blue="0.98299998044967651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="SkyColor">
-            <color red="0.27843137254901962" green="0.59999999999999998" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.27799999713897705" green="0.60000002384185791" blue="0.79600000381469727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
