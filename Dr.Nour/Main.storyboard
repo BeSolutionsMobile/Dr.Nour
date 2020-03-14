@@ -347,7 +347,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a referral code No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lb3-sI-IPc">
-                                                        <rect key="frame" x="30" y="34" width="180.5" height="20.5"/>
+                                                        <rect key="frame" x="30" y="34" width="187" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -399,7 +399,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-Zf-eLm">
-                                                <rect key="frame" x="30" y="190" width="281.5" height="20"/>
+                                                <rect key="frame" x="30" y="190" width="276.5" height="20"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su4-ES-q8N" customClass="BEMCheckBox">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -428,8 +428,8 @@
                                                             <action selector="acceptAllTermsAndConditions:" destination="cJg-Eo-ozD" eventType="valueChanged" id="5SO-Cl-8M7"/>
                                                         </connections>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Accept all terms and conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOf-Lj-GUI">
-                                                        <rect key="frame" x="30" y="0.0" width="247" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept all terms and conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOf-Lj-GUI">
+                                                        <rect key="frame" x="30" y="0.0" width="246.5" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                         <color key="textColor" name="FooterColor"/>
                                                         <nil key="highlightedColor"/>
@@ -738,7 +738,7 @@
             <objects>
                 <viewController storyboardIdentifier="ServiceInfoViewController" id="EhF-NC-XKg" customClass="ServiceInfoViewController" customModule="Dr_Nour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hpe-eJ-yIa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C5-td-gaV">
